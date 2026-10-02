@@ -2,7 +2,7 @@ const assetRoot = 'https://customer-assets-lqy194kg.emergentagent.net/job_portfo
 
 export const portfolioLogo = `${assetRoot}s37j9nmc_Logo.png`;
 
-// Labels follow the supplied tile container. Detailed case studies come later.
+// Labels follow the supplied tile container. Add case-study paths as they are supplied.
 export const projects = [
   {
     id: 'vox', title: 'Vox Booking Experience', category: 'Mobile',
@@ -12,6 +12,7 @@ export const projects = [
   },
   {
     id: 'poonch', title: 'Poonch food delivery', category: 'Mobile',
+    path: '/portfolio/poonch',
     description: 'Descriptions and details goes here',
     image: `${assetRoot}221c5nfo_Poonch_CS1.webp`,
     alt: 'Poonch food delivery mobile experience on a phone held against a blue shirt',

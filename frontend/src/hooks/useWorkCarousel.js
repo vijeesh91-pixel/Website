@@ -8,6 +8,7 @@ export const useWorkCarousel = (contentRef) => {
   const [viewportRef, api] = useEmblaCarousel({ align: 'start', containScroll: false, loop: false, slidesToScroll: 1, watchDrag: false, duration: reduced ? 0 : 32 });
   const [selected, setSelected] = useState(0);
   const pointer = useRef(null);
+  const suppressClick = useRef(false);
   const lastStep = useRef(0);
 
   const select = useCallback(index => {
@@ -59,9 +60,11 @@ export const useWorkCarousel = (contentRef) => {
   };
   const onPointerDown = event => {
     if (pointer.current || (event.button !== 0 && event.pointerType === 'mouse')) return;
+    suppressClick.current = false;
     pointer.current = { id: event.pointerId, x: event.clientX, y: event.clientY };
     try {
-      event.currentTarget.setPointerCapture?.(event.pointerId);
+      const captureTarget = event.target.closest('a') || event.currentTarget;
+      captureTarget.setPointerCapture?.(event.pointerId);
     } catch {
       // A browser can retire a canceled pointer before capture. In-viewport
       // release still works; never let a stale/synthetic pointer break the page.
@@ -71,11 +74,19 @@ export const useWorkCarousel = (contentRef) => {
     if (!pointer.current || pointer.current.id !== event.pointerId) return;
     const dx = event.clientX - pointer.current.x, dy = event.clientY - pointer.current.y;
     pointer.current = null;
+    if (Math.abs(dx) > 10 || Math.abs(dy) > 10) suppressClick.current = true;
     if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) select(selected + (dx < 0 ? 1 : -1));
   };
 
   const onPointerCancel = event => {
-    if (pointer.current?.id === event.pointerId) pointer.current = null;
+    if (pointer.current?.id === event.pointerId) { pointer.current = null; suppressClick.current = true; }
   };
-  return { viewportRef, selected, select, onKeyDown, onPointerDown, onPointerUp, onPointerCancel };
+  const onClickCapture = event => {
+    if (suppressClick.current && event.detail !== 0) {
+      event.preventDefault();
+      event.stopPropagation();
+      suppressClick.current = false;
+    }
+  };
+  return { viewportRef, selected, select, onKeyDown, onPointerDown, onPointerUp, onPointerCancel, onClickCapture };
 };

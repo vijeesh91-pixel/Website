@@ -74,13 +74,25 @@ Order: Vox Booking Experience / Mobile; Poonch food delivery / Mobile; Oddup -St
 
 ## Prioritized backlog
 - P0: No outstanding known landing or Work-page defects after pointer fix.
-- P1: All six navigation sections complete. Future content: individual project case studies and finalized Work descriptions.
+- P1: All six navigation sections and Poonch case study complete. Future content: Vox, Oddup, Print/Digital case studies and finalized Work descriptions.
 - P1: Receive project case-study destinations/content and final tile descriptions; current tiles are intentionally not links because no destinations were supplied.
 - Complete: Resume PDF, telephone, email and all social links supplied and connected.
 - P2: Rich project case studies and focused contact conversion after content is supplied.
 
 ## Next tasks
-Wait for project case-study content or further refinements. Preserve all six completed navigation sections and their supplied designs.
+Wait for the next project case-study content or further refinements. Preserve all six sections and the completed Poonch page.
+
+## Fifth iteration: Poonch case study complete (latest)
+User: "Now let's work on the work page case studies. I'm uploading the page for the second tile, Poonch. Along with the images inside it in WebP format. 7 more images are left. Ask for the remaining ones before starting."
+Asked, waited for first five plus final two images and "All Uploaded" before implementation.
+- Added `/portfolio/poonch`; entire Poonch tile (image/caption) is a real keyboard-accessible Link. Other three tiles remain non-clickable pending their pages.
+- Standalone centered case-study layout with no sidebar, header Back to Work, title, large hero, blue major headings, readable text, four screen-pair images, six stacked branding images, Final Outcome, bottom Back to Work.
+- 11 original WebP images, full aspect ratios: hero `Tiltle.webp`; phone groups 1/2/3/4; brand order b1 logo, b3 pouch, b2 box, b4 poster, b5 phone, b6 packaging/tote. Lazy loading below hero; reserved image dimensions; no new uploads/storage service.
+- Reference screenshot is only 344×2000. Copy reconstructed and lightly edited for readability; metadata limited to grounded project/scope/category instead of unreliable tiny team/timeframe text. No fabricated metrics or team names.
+- Carousel pointer capture now targets links when applicable, with post-drag click suppression; keeps native click, keyboard/new-tab links, one-slide wheel/drag/touch behavior. Back links use `/portfolio` and preserve its default first-slide behavior.
+- Files: `content/poonch.js`, `pages/PoonchCaseStudy.jsx`, `pages/PoonchCaseStudy.css`, `components/case-study/CaseStudyBlocks.jsx`; updated projects, carousel component/hook and App route/title.
+- Frontend only, no backend/auth/APIs or mocked flows.
+- `/app/test_reports/iteration_5.json`: all click/keyboard/new-tab, carousel drag/swipe/wheel, Back/reload/focus/title, all assets/order, reduced motion, desktop/tablet/mobile320/390 overflow and build checks passed. No unresolved defects. Self-screenshots: `/root/.emergent/automation_output/20261002_102850/console_20261002_102850.log`.
 
 ## Fourth iteration: Profile and Contact complete (current state)
 User: "Create the rest of the pages. Ask me to upload the remaining 8 icons in the profile page before starting. Use less token in all means."
