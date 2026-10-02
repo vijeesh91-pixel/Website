@@ -6,9 +6,12 @@ import { Button } from '../components/ui/button';
 import { NameArtwork } from '../components/NameArtwork';
 import { AvailabilityDialog } from '../components/AvailabilityDialog';
 import { site, revealEase } from '../content/site';
+import { useLandingScroll } from '../hooks/useLandingScroll';
 
 export const Landing = () => {
   const [dialog, setDialog] = useState(null);
+  const landingRef = useRef(null);
+  useLandingScroll(landingRef, Boolean(dialog));
   const dialogOpener = useRef(null);
   const openDialog = (kind, event) => {
     dialogOpener.current = event.currentTarget;
@@ -28,7 +31,7 @@ export const Landing = () => {
   };
 
   return (
-    <main className="landing" data-testid="landing-page" onPointerMove={moveScene} onPointerLeave={() => { mouseX.set(0); mouseY.set(0); }}>
+    <main ref={landingRef} className="landing" data-testid="landing-page" data-lenis-prevent onPointerMove={moveScene} onPointerLeave={() => { mouseX.set(0); mouseY.set(0); }}>
       <motion.div className="scene" style={{ x, y }} aria-hidden="true">
         <motion.img className="scene-image" src={site.background} alt="" width="2000" height="1500" fetchPriority="high" draggable="false"
           initial={reduced ? false : { scale: 1.035 }} animate={{ scale: 1 }} transition={{ duration: 2.4, ease: revealEase }} />

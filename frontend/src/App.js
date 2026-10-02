@@ -4,6 +4,7 @@ import { MotionConfig, useReducedMotion } from 'framer-motion';
 import Lenis from 'lenis';
 import { Landing } from './pages/Landing';
 import { Portfolio } from './pages/Portfolio';
+import { NotFound } from './pages/NotFound';
 import './App.css';
 
 function SiteRoutes() {
@@ -13,7 +14,7 @@ function SiteRoutes() {
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = pathname === '/portfolio'
-      ? 'Portfolio — Vijeesh Thattante Valappil'
+      ? 'Work — Vijeesh Thattante Valappil'
       : 'Vijeesh Thattante Valappil — Product Designer';
   }, [pathname]);
 
@@ -27,7 +28,7 @@ function SiteRoutes() {
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/portfolio" element={<Portfolio />} />
-      <Route path="*" element={<Portfolio notFound />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
