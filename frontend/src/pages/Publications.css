@@ -18,7 +18,8 @@
 .explore-article svg { transition: transform .25s ease; }
 .explore-article:hover { text-decoration: underline; text-underline-offset: 4px; }
 .explore-article:hover svg { transform: translate(2px, -2px); }
-.patent-section { margin-top: 125px; }
+.patent-section { margin-top: 33px; }
+.patent-links-top { margin-bottom: 51px; }
 .patent-banner { display: block; width: 100%; aspect-ratio: 1295 / 366; height: auto; object-fit: cover; object-position: center 55%; border-radius: 12px; }
 .patent-information { display: flex; align-items: flex-start; gap: 26px; margin-top: 34px; background: #e7f4fd; padding: 20px; border-radius: 18px; }
 .patent-copy { flex: 1; min-width: 0; }
@@ -36,7 +37,8 @@
   .medium-button { margin-top: 20px; }
   .writing-grid { margin-top: 24px; }
   .explore-article { margin-top: 12px; }
-  .patent-section { margin-top: 60px; }
+  .patent-section { margin-top: 20px; }
+  .patent-links-top { margin-bottom: 24px; }
   .patent-information { margin-top: 24px; }
   .patent-copy p { margin-bottom: 0; }
 }
@@ -48,7 +50,8 @@
   .writing-caption h2, .patent-caption h2 { font-size: 16px; }
   .writing-description, .patent-copy p { font-size: 13px; line-height: 1.5; }
   .reading-time, .patent-years { font-size: 12px; }
-  .patent-section { margin-top: 36px; }
+  .patent-section { margin-top: 30px; }
+  .patent-links-top { margin-bottom: 30px; }
   .patent-banner { aspect-ratio: 2000 / 667; object-fit: contain; border-radius: 8px; }
   .patent-information { padding: 18px; margin-top: 20px; border-radius: 12px; }
   .patent-links { gap: 8px; flex-wrap: wrap; }

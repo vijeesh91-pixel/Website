@@ -1,56 +1,50 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { useReducedMotion } from 'framer-motion';
+import { usePawlSound } from './usePawlSound';
+import { useSnapWheel } from './useSnapWheel';
 
-// Each wheel gesture / swipe advances exactly one project, including trackpad inertia.
+// Move one project per snap without locking out sustained wheel/trackpad input.
 export const useWorkCarousel = (contentRef) => {
   const reduced = useReducedMotion();
-  const [viewportRef, api] = useEmblaCarousel({ align: 'start', containScroll: false, loop: false, slidesToScroll: 1, watchDrag: false, duration: reduced ? 0 : 32 });
+  const [viewportRef, api] = useEmblaCarousel({ align: 'start', containScroll: false, loop: false, slidesToScroll: 1, watchDrag: false, duration: reduced ? 0 : 24 });
   const [selected, setSelected] = useState(0);
   const pointer = useRef(null);
   const suppressClick = useRef(false);
   const lastStep = useRef(0);
+  const sound = usePawlSound();
+  const { play, prepare } = sound;
 
   const select = useCallback(index => {
     if (!api) return;
+    const next = Math.max(0, Math.min(index, api.scrollSnapList().length - 1));
+    if (next === api.selectedScrollSnap()) return;
+    prepare();
     lastStep.current = performance.now();
-    api.scrollTo(Math.max(0, Math.min(index, api.scrollSnapList().length - 1)), Boolean(reduced));
-  }, [api, reduced]);
+    api.scrollTo(next, Boolean(reduced));
+  }, [api, reduced, prepare]);
+
+  useSnapWheel(contentRef, api, select, lastStep);
 
   useEffect(() => {
     if (!api) return;
-    const update = () => setSelected(api.selectedScrollSnap());
-    api.on('select', update).on('reInit', update);
-    update();
-    return () => { api.off('select', update).off('reInit', update); };
-  }, [api]);
+    let previous = api.selectedScrollSnap();
+    const update = () => {
+      const next = api.selectedScrollSnap();
+      setSelected(next);
+      if (next !== previous) { previous = next; play(); }
+    };
+    const reInit = () => { previous = api.selectedScrollSnap(); setSelected(previous); };
+    api.on('select', update).on('reInit', reInit);
+    reInit();
+    return () => { api.off('select', update).off('reInit', reInit); };
+  }, [api, play]);
 
   useEffect(() => {
-    const content = contentRef.current;
-    if (!content || !api) return;
-    const readyAt = performance.now() + 700;
-    let lastWheel = 0, amount = 0, consumed = false;
-    const wheel = event => {
-      if (event.ctrlKey || event.metaKey) return;
-      // Leave vertical page scrolling available on narrow screens outside the tiles.
-      if (window.innerWidth < 768 && !event.target.closest('[data-carousel-viewport]')) return;
-      const delta = (Math.abs(event.deltaX) > Math.abs(event.deltaY) ? event.deltaX : event.deltaY) * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? content.clientHeight : 1);
-      if (!delta) return;
-      event.preventDefault();
-      const now = performance.now();
-      if (now - lastWheel > 180) { amount = 0; consumed = false; }
-      lastWheel = now;
-      if (now < readyAt || consumed || now - lastStep.current < 550) return;
-      if (Math.sign(amount) !== Math.sign(delta)) amount = 0;
-      amount += delta;
-      if (Math.abs(amount) >= 24) {
-        consumed = true;
-        select(api.selectedScrollSnap() + Math.sign(amount));
-      }
-    };
-    content.addEventListener('wheel', wheel, { passive: false });
-    return () => content.removeEventListener('wheel', wheel);
-  }, [api, contentRef, select]);
+    const resetPointer = () => { pointer.current = null; suppressClick.current = false; };
+    window.addEventListener('blur', resetPointer);
+    return () => window.removeEventListener('blur', resetPointer);
+  }, []);
 
   const onKeyDown = event => {
     const keys = { ArrowRight: selected + 1, ArrowLeft: selected - 1, Home: 0, End: api ? api.scrollSnapList().length - 1 : 0 };
@@ -59,7 +53,7 @@ export const useWorkCarousel = (contentRef) => {
     select(keys[event.key]);
   };
   const onPointerDown = event => {
-    if (pointer.current || (event.button !== 0 && event.pointerType === 'mouse')) return;
+    if ((pointer.current && pointer.current.id !== event.pointerId) || (event.button !== 0 && event.pointerType === 'mouse')) return;
     suppressClick.current = false;
     pointer.current = { id: event.pointerId, x: event.clientX, y: event.clientY };
     try {
@@ -75,7 +69,7 @@ export const useWorkCarousel = (contentRef) => {
     const dx = event.clientX - pointer.current.x, dy = event.clientY - pointer.current.y;
     pointer.current = null;
     if (Math.abs(dx) > 10 || Math.abs(dy) > 10) suppressClick.current = true;
-    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) select(selected + (dx < 0 ? 1 : -1));
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) select((api?.selectedScrollSnap() ?? selected) + (dx < 0 ? 1 : -1));
   };
 
   const onPointerCancel = event => {
@@ -88,5 +82,5 @@ export const useWorkCarousel = (contentRef) => {
       suppressClick.current = false;
     }
   };
-  return { viewportRef, selected, select, onKeyDown, onPointerDown, onPointerUp, onPointerCancel, onClickCapture };
+  return { viewportRef, selected, select, onKeyDown, onPointerDown, onPointerUp, onPointerCancel, onClickCapture, soundEnabled: sound.enabled, toggleSound: sound.toggle };
 };

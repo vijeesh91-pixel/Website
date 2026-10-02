@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Volume2, VolumeX } from 'lucide-react';
 import { projects } from '../../content/projects';
 
 export const ProjectCarousel = ({ carousel }) => (
@@ -12,6 +13,10 @@ export const ProjectCarousel = ({ carousel }) => (
           <span aria-hidden="true" />
         </button>
       ))}
+      <button type="button" className="scroll-sound-toggle" onClick={carousel.toggleSound} aria-pressed={carousel.soundEnabled}
+        aria-label={carousel.soundEnabled ? 'Mute scroll sound' : 'Enable scroll sound'} title={carousel.soundEnabled ? 'Mute scroll sound' : 'Enable scroll sound'} data-testid="scroll-sound-toggle">
+        {carousel.soundEnabled ? <Volume2 size={17} aria-hidden="true" /> : <VolumeX size={17} aria-hidden="true" />}
+      </button>
     </div>
     <p className="sr-only" id="carousel-help">Scroll, swipe, or use the left and right arrow keys to move one project at a time.</p>
     <div ref={carousel.viewportRef} className="project-viewport" id="work-projects" tabIndex={0} aria-label="Project tiles" aria-describedby="carousel-help"

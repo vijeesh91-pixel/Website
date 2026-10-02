@@ -32,6 +32,9 @@
 .slide-indicator:active { transform: scale(.92); }
 .slide-indicator.is-selected { background: #f1f1f1; }
 .slide-indicator.is-selected span { width: 3px; height: 18px; background: #0768e8; }
+.scroll-sound-toggle { display: grid; place-items: center; width: 38px; height: 36px; margin-left: 9px; border: 0; border-left: 1px solid #e8e8e8; border-radius: 0 8px 8px 0; background: transparent; color: #777; transition: color .2s ease, background-color .2s ease; }
+.scroll-sound-toggle:hover { color: #0768e8; background: #f5f5f5; }
+.scroll-sound-toggle[aria-pressed='false'] { color: #a0a0a0; }
 .project-viewport { overflow: hidden; padding: 4px 0 8px; margin-top: -4px; touch-action: pan-y pinch-zoom; cursor: grab; outline-offset: -3px; }
 .project-viewport:active { cursor: grabbing; }
 .project-viewport:focus-visible { outline: 2px solid #d9bc53; }

@@ -82,6 +82,12 @@ Order: Vox Booking Experience / Mobile; Poonch food delivery / Mobile; Oddup -St
 ## Next tasks
 Wait for the next project case-study content or further refinements. Preserve all six sections and the completed Poonch page.
 
+## Refinement: Patent action placement (latest)
+User requested the US, EU, and WIPO patent buttons above the Caspo image, matching the Writing page action placement.
+- Moved the patent publication action group directly below the Patent introduction and before the banner on desktop and mobile.
+- Retained all external destinations, accessible labels, `data-testid` values, and responsive wrapping.
+- Verified the position on `/portfolio/patent` at desktop (1920×800) and mobile (390×844); production `yarn build` passes.
+
 ## Fifth iteration: Poonch case study complete (latest)
 User: "Now let's work on the work page case studies. I'm uploading the page for the second tile, Poonch. Along with the images inside it in WebP format. 7 more images are left. Ask for the remaining ones before starting."
 Asked, waited for first five plus final two images and "All Uploaded" before implementation.

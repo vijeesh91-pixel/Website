@@ -28,15 +28,15 @@ export const WritingContent = () => (
 
 export const PatentContent = () => (
   <section className="patent-section" aria-label="Caspo patent" data-testid="patent-details">
+    <nav className="patent-links patent-links-top" aria-label="Patent publications" data-testid="patent-links">
+      {patent.links.map(link => <Button asChild key={link.label} className={`publication-button patent-button ${link.label === 'WIPO' ? 'wipo-button' : ''}`}><OutboundLink href={link.url} testId={`patent-link-${link.label.toLowerCase()}`} label={`View ${link.label} patent (opens in a new tab)`}>{link.label}</OutboundLink></Button>)}
+    </nav>
     <img className="patent-banner" src={patent.image} alt="Caspo smart cooking system in an illustrated landscape with mountains, water, and renewable energy" width="2000" height="667" data-testid="patent-banner" />
     <div className="patent-information">
       <div className="patent-copy">
         <div className="patent-caption"><h2 data-testid="patent-title">{patent.title}</h2><span className="patent-years" data-testid="patent-years">{patent.years}</span></div>
         <p data-testid="patent-description">{patent.description}</p>
       </div>
-      <nav className="patent-links" aria-label="Patent publications" data-testid="patent-links">
-        {patent.links.map(link => <Button asChild key={link.label} className={`publication-button patent-button ${link.label === 'WIPO' ? 'wipo-button' : ''}`}><OutboundLink href={link.url} testId={`patent-link-${link.label.toLowerCase()}`} label={`View ${link.label} patent (opens in a new tab)`}>{link.label}</OutboundLink></Button>)}
-      </nav>
     </div>
   </section>
 );
