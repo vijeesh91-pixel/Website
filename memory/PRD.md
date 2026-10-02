@@ -1,4 +1,4 @@
-# Vijeesh Thattante Valappil — Landing + Portfolio Work
+# Vijeesh Thattante Valappil — Landing, Work, Writing, Patent
 
 ## Original problem statement
 Build a landing page: Create a responsive landing page based on the second reference image.
@@ -74,10 +74,33 @@ Order: Vox Booking Experience / Mobile; Poonch food delivery / Mobile; Oddup -St
 
 ## Prioritized backlog
 - P0: No outstanding known landing or Work-page defects after pointer fix.
-- P1: Wait for user's next section assets/details. Do not build Writing, Patent, Profile, or Contact until supplied.
+- P1: Writing and Patent now complete. Wait for Profile and Contact assets/details before building them.
 - P1: Receive project case-study destinations/content and final tile descriptions; current tiles are intentionally not links because no destinations were supplied.
 - P1: Receive resume file/link and contact telephone, then set `site.resumeUrl` / `site.phone` and verify their real destinations.
 - P2: Rich project case studies and focused contact conversion after content is supplied.
 
 ## Next tasks
-Wait for the user's next page or section designs. Work layout is complete; leave upcoming navigation sections unimplemented until the user supplies details. Keep the landing and Work compositions intact. Resume and real contact details remain pending from the first iteration.
+Wait for Profile/Contact designs or project case studies. Keep Landing, Work, Writing and Patent compositions intact. Resume and real contact details remain pending from the first iteration.
+
+## Third iteration: Writing and Patent complete
+User: "I'm uploading the next 2 pages and the supporting webP files. Since it uses a similar layout and there is no scroll, Use fewer tokens and develop the next two pages."
+Asked for external destinations; user supplied all six. Reused sidebar, logo, typography, and page spacing. No redesign or extra integrations.
+
+- Routes `/portfolio/writing`, `/portfolio/patent`; original `/portfolio` remains default Work.
+- Writing: two static article cards, exact reference titles/excerpts/read times, original WebP images, Medium profile button and Explore article links. Card images also link to their articles.
+- Patent: Caspo WebP banner, smart hydrogen cooking system title, 2016–2018 date, supplied abstract, US/EU/WIPO buttons.
+- No carousel or scroll interception on either page; desktop content fits 1920×800 and reference 1920×1259. Mobile stacks normally with vertical scrolling for readability.
+- Navigation enabled for Writing/Patent with correct active marker, aria-current, heading focus and browser title. Profile/Contact still disabled. Original labels retained (Patent/Profile, not screenshot Patents/About).
+- All external links use new tabs and noopener noreferrer.
+- Files: `content/publications.js` (all assets/copy/URLs), `components/portfolio/PublicationContent.jsx`, `pages/PublicationPage.jsx`, `pages/Publications.css`. Updated shared sidebar and App routes only; backend untouched.
+
+### External destinations
+- Medium profile: https://medium.com/@vijeesh91
+- Article 1: https://medium.com/@vijeesh91/the-best-ux-designers-arent-faster-than-ai-they-re-better-at-seeing-what-ai-misses-154d0923e148
+- Article 2: https://medium.com/@vijeesh91/how-agentic-ai-is-changing-product-design-forever-bc611fb785e4
+- US: https://patents.google.com/patent/US20190056107A1/en?inventor=Vijeesh+Thattante+Valappil&oq=Vijeesh+Thattante+Valappil
+- EU: https://patents.google.com/patent/EP3411265B1/en?inventor=Vijeesh+Thattante+Valappil&oq=Vijeesh+Thattante+Valappil
+- WIPO: https://patents.google.com/patent/WO2017136489A1/en
+
+### Validation
+`/app/test_reports/iteration_3.json`: all checks passed, no defects. Tested desktop 1920×800/1259, tablet 768×1024, mobile 390×844/320 width, correct links/new tabs, direct reloads, navigation, active markers, accessible focus, images, no horizontal overflow, no carousel interception, existing Work/landing regression. Production build succeeded. No new credentials, APIs or mocked flows.

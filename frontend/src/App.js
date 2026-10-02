@@ -5,6 +5,7 @@ import Lenis from 'lenis';
 import { Landing } from './pages/Landing';
 import { Portfolio } from './pages/Portfolio';
 import { NotFound } from './pages/NotFound';
+import PublicationPage from './pages/PublicationPage';
 import './App.css';
 
 function SiteRoutes() {
@@ -13,9 +14,8 @@ function SiteRoutes() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = pathname === '/portfolio'
-      ? 'Work — Vijeesh Thattante Valappil'
-      : 'Vijeesh Thattante Valappil — Product Designer';
+    const sectionTitle = { '/portfolio': 'Work', '/portfolio/writing': 'Writing', '/portfolio/patent': 'Patent' }[pathname];
+    document.title = sectionTitle ? `${sectionTitle} — Vijeesh Thattante Valappil` : 'Vijeesh Thattante Valappil — Product Designer';
   }, [pathname]);
 
   useEffect(() => {
@@ -28,6 +28,8 @@ function SiteRoutes() {
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/portfolio/writing" element={<PublicationPage section="writing" />} />
+      <Route path="/portfolio/patent" element={<PublicationPage section="patent" />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
