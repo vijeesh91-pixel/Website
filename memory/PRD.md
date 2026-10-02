@@ -1,4 +1,4 @@
-# Vijeesh Thattante Valappil — Landing, Work, Writing, Patent
+# Vijeesh Thattante Valappil — Complete Portfolio Sections
 
 ## Original problem statement
 Build a landing page: Create a responsive landing page based on the second reference image.
@@ -74,13 +74,32 @@ Order: Vox Booking Experience / Mobile; Poonch food delivery / Mobile; Oddup -St
 
 ## Prioritized backlog
 - P0: No outstanding known landing or Work-page defects after pointer fix.
-- P1: Writing and Patent now complete. Wait for Profile and Contact assets/details before building them.
+- P1: All six navigation sections complete. Future content: individual project case studies and finalized Work descriptions.
 - P1: Receive project case-study destinations/content and final tile descriptions; current tiles are intentionally not links because no destinations were supplied.
-- P1: Receive resume file/link and contact telephone, then set `site.resumeUrl` / `site.phone` and verify their real destinations.
+- Complete: Resume PDF, telephone, email and all social links supplied and connected.
 - P2: Rich project case studies and focused contact conversion after content is supplied.
 
 ## Next tasks
-Wait for Profile/Contact designs or project case studies. Keep Landing, Work, Writing and Patent compositions intact. Resume and real contact details remain pending from the first iteration.
+Wait for project case-study content or further refinements. Preserve all six completed navigation sections and their supplied designs.
+
+## Fourth iteration: Profile and Contact complete (current state)
+User: "Create the rest of the pages. Ask me to upload the remaining 8 icons in the profile page before starting. Use less token in all means."
+Asked and waited for all eight icons, resume and social links. User confirmed "All uploaded" with final assets before implementation.
+
+- Routes `/portfolio/profile` and `/portfolio/contact`; all six sidebar items now function, with matching yellow active markers and direct reloads.
+- Profile: blue handwritten greeting, supplied biography, tools image strip, four experience entries, two education entries, four certifications using original WebP icons. Experience date ending December 2027 is preserved from user reference intentionally.
+- Contact: original illustrated portrait, email and phone with real copy buttons and success/error feedback, four social links, resume download, current-year footer. No contact form requested.
+- ResumeDownload component fetches durable PDF as a Blob to download `Vijeesh-CV.pdf`, with direct-PDF fallback on fetch failure. Reused on Landing, Profile, Contact. Landing phone CTA now uses real tel link; old availability dialogs no longer used.
+- Email: `vijeesh91@gmail.com`. Phone: `+971509045108`, both from provided Contact reference, authorized in clarification.
+- Resume: https://customer-assets-lqy194kg.emergentagent.net/job_portfolio-landing-96/artifacts/suu4o393_Vijeesh-CV.pdf
+- Social: https://www.linkedin.com/in/vijeeshvalappil/ (normalized accidental whitespace), https://www.behance.net/vijeesh_tv, https://www.instagram.com/vijeesh.valappil/, https://medium.com/@vijeesh91.
+- All assets/copy centralized in `content/profile.js`; shared contact data in `content/site.js`. New pages: `ProfilePage.jsx`, `ContactPage.jsx`, `PersonalPages.css`; reusable `ResumeDownload.jsx`, `CopyContact.jsx`, `portfolio/ProfileSection.jsx`.
+- Tablet/mobile layouts stack naturally; portrait face remains visible; fixed sidebar on desktop, existing responsive navigation on mobile. Gaegu font used only for profile greeting.
+- No backend/API/auth changes or runtime mocks. All supplied files remain on their durable public asset URLs.
+
+### Fourth iteration verification
+`/app/test_reports/iteration_4.json`: all checks passed, no defects. Desktop1920×800/1259, tablet768×1024, mobile390×844/320×700. Real PDF downloads on all three pages, exact contact/social hrefs, clipboard success/denial, download error fallback, direct reloads, active nav, page titles/focus, scroll reset from bottom of Profile to Contact, existing navigation regressions, no horizontal overflow, and production build success.
+Self-test additionally verified actual clipboard contents and actual downloaded filename. Negative tests simulated browser clipboard denial and failed PDF fetch only during tests; application flows are not mocked. No credentials created.
 
 ## Third iteration: Writing and Patent complete
 User: "I'm uploading the next 2 pages and the supporting webP files. Since it uses a similar layout and there is no scroll, Use fewer tokens and develop the next two pages."

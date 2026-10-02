@@ -9,7 +9,7 @@ export const PortfolioSidebar = ({ onWork, active = 'work' }) => (
     </Link>
     <nav className="work-navigation" aria-label="Portfolio sections" data-testid="portfolio-navigation">
       <Link to="/" className="work-nav-item" data-testid="nav-home"><span className="nav-marker" aria-hidden="true" /><span>Home</span></Link>
-      {['Work', 'Writing', 'Patent'].map(label => {
+      {['Work', 'Writing', 'Patent', 'Profile', 'Contact'].map(label => {
         const id = label.toLowerCase();
         const className = `work-nav-item ${active === id ? 'is-active' : ''}`;
         const contents = <><span className="nav-marker" aria-hidden="true" /><span>{label}</span></>;
@@ -17,11 +17,6 @@ export const PortfolioSidebar = ({ onWork, active = 'work' }) => (
           ? <button key={id} type="button" className={className} aria-current="page" onClick={onWork} data-testid="nav-work">{contents}</button>
           : <Link key={id} to={id === 'work' ? '/portfolio' : `/portfolio/${id}`} className={className} aria-current={active === id ? 'page' : undefined} data-testid={`nav-${id}`}>{contents}</Link>;
       })}
-      {['Profile', 'Contact'].map(label => (
-        <button type="button" className="work-nav-item is-upcoming" key={label} aria-disabled="true" title={`${label} content will be added later`} data-testid={`nav-${label.toLowerCase()}`}>
-          <span className="nav-marker" aria-hidden="true" /><span>{label}</span>
-        </button>
-      ))}
     </nav>
   </aside>
 );

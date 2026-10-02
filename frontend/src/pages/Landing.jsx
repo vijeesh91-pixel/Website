@@ -1,22 +1,16 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useMotionValue, useSpring, useReducedMotion } from 'framer-motion';
 import { Phone } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { NameArtwork } from '../components/NameArtwork';
-import { AvailabilityDialog } from '../components/AvailabilityDialog';
+import { ResumeDownload } from '../components/ResumeDownload';
 import { site, revealEase } from '../content/site';
 import { useLandingScroll } from '../hooks/useLandingScroll';
 
 export const Landing = () => {
-  const [dialog, setDialog] = useState(null);
   const landingRef = useRef(null);
-  useLandingScroll(landingRef, Boolean(dialog));
-  const dialogOpener = useRef(null);
-  const openDialog = (kind, event) => {
-    dialogOpener.current = event.currentTarget;
-    setDialog(kind);
-  };
+  useLandingScroll(landingRef, false);
   const reduced = useReducedMotion();
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -43,10 +37,8 @@ export const Landing = () => {
         </motion.p>
         <motion.nav {...entrance(0.95)} className="hero-actions" aria-label="Explore and connect" data-testid="hero-actions">
           <Button asChild className="hero-button portfolio-button"><Link to={site.portfolioPath} data-testid="portfolio-cta">Portfolio</Link></Button>
-          {site.resumeUrl ? <Button asChild className="hero-button resume-button"><a href={site.resumeUrl} target="_blank" rel="noopener noreferrer" data-testid="resume-cta">Resume</a></Button>
-            : <Button className="hero-button resume-button" onClick={event => openDialog('resume', event)} data-testid="resume-cta">Resume</Button>}
-          {site.phone ? <Button asChild className="hero-button contact-button"><a href={`tel:${site.phone}`} aria-label="Call Vijeesh" data-testid="contact-cta"><Phone aria-hidden="true" /></a></Button>
-            : <Button className="hero-button contact-button" onClick={event => openDialog('contact', event)} aria-label="Contact Vijeesh" data-testid="contact-cta"><Phone aria-hidden="true" /></Button>}
+          <ResumeDownload testId="resume-cta" className="hero-button resume-button" icon={false}>Resume</ResumeDownload>
+          <Button asChild className="hero-button contact-button"><a href={`tel:${site.phone}`} aria-label="Call Vijeesh" data-testid="contact-cta"><Phone aria-hidden="true" /></a></Button>
         </motion.nav>
       </div>
       <motion.div {...entrance(1.4)} className="portfolio-cue-wrap">
@@ -55,7 +47,6 @@ export const Landing = () => {
           <svg width="70" height="24" viewBox="0 0 70 24" fill="none" aria-hidden="true"><path d="M3 5L35 17L67 5" stroke="currentColor" strokeWidth="3" strokeLinecap="round" /><path d="M3 11L35 23L67 11" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" /></svg>
         </Link>
       </motion.div>
-      <AvailabilityDialog kind={dialog} onClose={() => setDialog(null)} openerRef={dialogOpener} />
     </main>
   );
 };
