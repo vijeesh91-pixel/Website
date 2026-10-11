@@ -73,14 +73,39 @@ Order: Vox Booking Experience / Mobile; Poonch food delivery / Mobile; Oddup -St
 - Physical iOS/Android hardware was not available; browser-emulated touch was verified.
 
 ## Prioritized backlog
-- P0: No outstanding known landing or Work-page defects after pointer fix.
-- P1: All six navigation sections and Poonch case study complete. Future content: Vox, Oddup, Print/Digital case studies and finalized Work descriptions.
-- P1: Receive project case-study destinations/content and final tile descriptions; current tiles are intentionally not links because no destinations were supplied.
+- P0: No known unresolved core defects. Previously unverified continuous-wheel/pawl-sound changes now verified in iteration 6; audio teardown follow-up also passed.
+- P1: All six navigation sections, Poonch and Vox case studies complete. Receive assets and exact copy for Oddup and Print/Digital; those two tiles remain intentionally non-clickable.
+- P1: Receive finalized Work tile descriptions; existing supplied placeholder descriptions are unchanged.
 - Complete: Resume PDF, telephone, email and all social links supplied and connected.
 - P2: Rich project case studies and focused contact conversion after content is supplied.
 
 ## Next tasks
-Wait for the next project case-study content or further refinements. Preserve all six sections and the completed Poonch page.
+Await user feedback on Vox or the next project case-study assets/copy. Preserve all six sections, Poonch and Vox. Do not invent missing project copy. Optional P2 enhancement, not approved or implemented: section navigation for long case studies.
+
+## Sixth iteration: Vox Booking Experience complete — 2026-10-11
+User requested the first Work tile's case study, supplying images in batches, explicitly asking to wait until all uploads were complete and to include the tables for readability. User initially requested no testing. Engineering validation was performed as required. After the 195px-wide overview proved unreadable, requested readable copy rather than inventing it. User supplied two PDFs and said: "I've uploaded it in two parts due to length restrictions. Ask me in case of any doubt, don't generate any content on your own."
+
+### Authoritative sources
+- Part 1: `https://customer-assets-lqy194kg.emergentagent.net/job_portfolio-landing-96/artifacts/c3d38e030bdfd5b6_Case%20study_First%20part.pdf`
+- Part 2: `https://customer-assets-lqy194kg.emergentagent.net/job_portfolio-landing-96/artifacts/d93d0b7f0dc1bfe0_Case%20study-Part%202.pdf`
+- Local originals/native PDF text: `/app/reference_assets/vox/part1.pdf`, `part2.pdf`, `part1-page0.txt`, `part2-page0.txt`. Native text used, with PDF encoding artifacts normalized; earlier AI analysis of the tiny overview was unreliable and discarded.
+
+### Implemented
+- Added `/portfolio/vox`, linked the whole first Work tile, browser title, heading focus, native new-tab navigation and top/bottom Back to Work links.
+- Preserved the established centered case-study layout, original hero, blue section headings, white background and reduced-motion-aware reveals.
+- Exact supplied narrative: At-A-Glance/team/role/timeline, Problem Statement, ten Constraints/Assumptions notes, mental models, heuristic analysis, Design Opportunity, Competitive Analysis, Prioritisation/design scope, User flow, Wireframe, Prototype Screens. Intentional repetition and unusual original wording retained; no invented research, outcomes or metrics.
+- Readable semantic tables: 8 heuristic rows, 14 competitive-feature rows across six cinemas, 8 priority rows. Desktop grid becomes labeled rows on mobile without page overflow; original status colors and legend preserved.
+- Eleven wireframes and ten numbered prototype screens in PDF order, laptop backdrop overlap on desktop and single-column mobile galleries. Original color Review B upload is not in the PDF's final prototype grid and is intentionally not added there.
+- Success screen and wireframe success crop extracted directly from the PDF's embedded images; higher-resolution flow rendered from its original vector diagram. Saved only these three WebP assets under `frontend/public/images/vox/`; other provided WebPs reuse original hosting. PyMuPDF used solely as temporary extraction tooling in `/tmp/vox-pdf-tools`, not added as an application dependency.
+- Preserved original FigJam URL for Detailed User Flow; diagram itself opens full-resolution in a new tab. No new backend, auth, upload service or mocked APIs.
+- New files: `content/vox.js`, `content/voxResearch.js`, `components/case-study/VoxResearch.jsx`, `components/case-study/VoxScreens.jsx`, `pages/VoxCaseStudy.jsx`, `pages/VoxCaseStudy.css`. Reused existing case-study blocks/CSS. Modified only App routes/title and Vox project's path in existing frontend code.
+
+### Verification
+- `yarn build` passed; external `/portfolio/vox` HTTP 200; initial visual smoke passed.
+- `/app/test_reports/iteration_6.json`: source fidelity, all images, all tables/test IDs, Work/Vox/Poonch navigation, native new tabs, direct reload, heading focus, reduced motion, mobile320/tablet768/1024/desktop1440 no horizontal overflow passed.
+- Outstanding P0 carousel verification completed: sustained/discrete wheel, direction changes/boundaries, indicator sync, drag/touch/cancel behavior, mute persistence, gesture-gated nonzero audio playback and no sound on no-op snaps passed. No carousel code modification needed.
+- Testing agent's only evidence gap was audio teardown instrumentation. Follow-up verified AudioContext closed plus both sound-specific pointerdown/keydown listeners removed after leaving Work. Proof: `/root/.emergent/automation_output/20261011_213314/console_20261011_213314.log`. An earlier overbroad check incorrectly included unrelated platform listeners; narrowed check passed.
+- Existing non-blocking preload warnings remain performance polish, not a broken flow. Physical hardware audio listening not performed. No credentials created or modified.
 
 ## Refinement: Patent action placement (latest)
 User requested the US, EU, and WIPO patent buttons above the Caspo image, matching the Writing page action placement.

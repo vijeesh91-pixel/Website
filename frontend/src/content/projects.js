@@ -6,6 +6,7 @@ export const portfolioLogo = `${assetRoot}s37j9nmc_Logo.png`;
 export const projects = [
   {
     id: 'vox', title: 'Vox Booking Experience', category: 'Mobile',
+    path: '/portfolio/vox',
     description: 'Descriptions and details goes here',
     image: `${assetRoot}yrsahgjm_Vox_CS1.webp`,
     alt: 'VOX Cinemas identity on a deep blue background',

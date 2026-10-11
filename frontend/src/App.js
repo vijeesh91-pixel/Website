@@ -9,6 +9,7 @@ import PublicationPage from './pages/PublicationPage';
 import ProfilePage from './pages/ProfilePage';
 import ContactPage from './pages/ContactPage';
 import PoonchCaseStudy from './pages/PoonchCaseStudy';
+import VoxCaseStudy from './pages/VoxCaseStudy';
 import './App.css';
 
 function SiteRoutes() {
@@ -17,7 +18,7 @@ function SiteRoutes() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    const sectionTitle = { '/portfolio': 'Work', '/portfolio/writing': 'Writing', '/portfolio/patent': 'Patent', '/portfolio/profile': 'Profile', '/portfolio/contact': 'Contact', '/portfolio/poonch': 'Poonch Case Study' }[pathname];
+    const sectionTitle = { '/portfolio': 'Work', '/portfolio/writing': 'Writing', '/portfolio/patent': 'Patent', '/portfolio/profile': 'Profile', '/portfolio/contact': 'Contact', '/portfolio/poonch': 'Poonch Case Study', '/portfolio/vox': 'Vox Booking Experience' }[pathname];
     document.title = sectionTitle ? `${sectionTitle} — Vijeesh Thattante Valappil` : 'Vijeesh Thattante Valappil — Product Designer';
   }, [pathname]);
 
@@ -36,6 +37,7 @@ function SiteRoutes() {
       <Route path="/portfolio/profile" element={<ProfilePage />} />
       <Route path="/portfolio/contact" element={<ContactPage />} />
       <Route path="/portfolio/poonch" element={<PoonchCaseStudy />} />
+      <Route path="/portfolio/vox" element={<VoxCaseStudy />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

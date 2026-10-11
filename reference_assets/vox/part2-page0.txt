@@ -1,0 +1,225 @@
+User flow
+
+
+The goal here is to show exactly where the new venue-switching behaviour enters the existing VOX journey. Rather
+than redesigning the entire booking flow,    Iˇd d introduce a recovery loop at the seat-selection stage, where the user has
+enough information to make an informed decision.
+
+
+Detailed User Flow : Click here
+
+
+
+
+
+                                         Whats On
+
+
+
+
+
+                  Select Movie                                                 Select Cinema
+
+
+
+
+
+                                              Select Showtime -
+                                                         in all cinemas
+
+
+
+
+
+                                         No                          Logged in?
+
+
+
+
+
+                        Login or Guest
+
+
+
+
+                                                         Yes
+
+
+
+
+
+                 Choose Seats - no hold,                                  Seats
+                       no timer                                             suitable?
+
+
+
+
+
+                                                            No
+
+
+
+
+                   Continue to seats - login
+                                                     Go back - nothing held
+                          skipped
+
+
+
+
+
+                                                            Cinemas and Showtimes
+                                                                             - choices kept, viewed
+                                                                  cinemas marked
+
+
+
+
+                                                                Cannot meet rating
+
+
+
+
+
+                                                           Age confirmation
+
+   Food and Drinks - add or
+              skip                                                                            Yes
+
+
+
+
+
+                                                                     Agree
+
+
+
+
+
+                                                                  Seats held and timer
+                                                                              starts - about 7 min
+
+
+
+
+                                                                     Timer ends
+                Back - seats stay held,
+                    timer keeps running
+
+
+                                                               Hold released - back to
+                                                                  showtimes
+
+
+
+
+
+      Payment - Order                                                   Select seats and click
+     summary and timer:                                                 Proceed
+   movie, cinema, time, seat
+            s, F&B  , total
+
+
+
+                                                                        Seat taken by     Payment
+                                                              someone else                                                    Details: logged in           fails
+                                                     prefilled, guest enters
+                                                email, name, mobile
+
+
+
+    Retry or other method -
+                                                                                    Reselect seats
+        seats still held
+
+
+
+                                             Offers and vouchers -
+                                                     optional
+
+
+
+
+
+      Choose payment
+   method: saved card, new                        Result                      Failed
+           card, other
+
+
+
+
+
+                                                                                Retry or other method -
+         Ticket Issued              Success
+                                                                                    seats still held
+
+
+
+
+
+                                          Booking Success:
+                                                    e-ticket, QR, email
+
+
+
+
+
+Wireframe
+
+
+The redesign keeps the existing VOX visual language. The change is interaction-focused, not a complete visual
+redesign. Wireframes validate the flow and the venue-switching logic; final screens apply the VOX visual language to
+the validated flow
+
+
+
+
+
+Prototype Screens
+
+
+The redesign connects movie discovery, cinema selection, showtime comparison, seat selection, food ordering, and
+payment into a consistent booking journey. Its central UX objective is to make cinema switching easier when seat
+availability  is  limited, while preserving  relevant booking context and  clearly communicating any changes  to,
+showtimes, formats, or pricing.
+
+
+
+
+
+     Home Screen                                         Movies List   1                                           2
+           Whatˇs s on, Coming soon, and entertainments                        Movie Discovery, and categorization
+
+
+
+
+
+       Movie Page                                        Cinema List  3                                        4
+            Trailer, Movies details, Rating of the movie                          Date and List of cinemaˇs s available
+
+
+
+
+
+       Seat Map                                           Access Control  5                                         6
+         Seat map with tier segmentation and pricing                        Access condition confirmation page
+
+
+
+
+
+      Food & Beverages                                      Review Page  7                                         8
+          In house food and beverages list                                 Payment review, Offers and Vouchers
+
+
+
+
+
+      Voucher and Offers Page                               Success Page  9                                               10
+         Offer application page                                                  Ticket issuing and confirmation details
+
+
+
+
+
+   Back

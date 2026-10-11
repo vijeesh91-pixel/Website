@@ -1,0 +1,312 @@
+                  Back
+
+
+             Vox Cinemas
+
+     Vox Cinema Booking experience: Reducing
+       Friction When Switching Cinemas
+
+
+
+
+
+           At-A-Glance
+
+
+             A self-initiated redesign project exploring how the VOX Cinemas booking experience could be made simpler, clearer,
+               and more intuitive. The project focuses on identifying usability gaps in the existing experience and proposing a more
+                  streamlined movie-booking journey.
+
+
+               Team                                 Role                                  Timeline
+
+                     Vijeesh Thattante Valappil              Mobile application, Website              1-2 Weeks
+                    (UI/UX)
+
+
+
+
+
+          Problem Statement
+
+
+               The current VOX booking experience follows a linear, venue-specific journey, making  it difficult for users to change
+                cinemas once they have started booking. When users reach the seat-selection stage and find limited availability, there
+                        is no clear way to explore or compare another venue without leaving the flow.
+
+                  This creates a loss-of-context problem: users may have to repeat earlier steps, lose their booking progress, and
+                  mentally track information from the previous venue. For a time-sensitive, high-intent task like cinema booking, this
+               adds unnecessary cognitive load and increases the risk of flow abandonment.
+
+            How might we let users compare and switch venues at any point before payment, without losing their progress or
+                confidence in the booking?
+
+
+
+            Constraints and Assumptions
+
+               The redesign was approached within the boundaries of VOX Cinemasˇ existing booking ecosystem. The goal was to
+                improve the venue-selection and switching experience without changing the underlying booking, inventory, pricing, or
+               payment systems.
+
+
+
+                     Showtimes, formats, seat         IMAX, 4DX, GOLD, MAX,          Users should be able to           Users typically begin the
+                          layouts, and pricing vary by       and other formats may not         switch venues before seat          journey with a movie,
+                      cinema.                      be available at every venue.         selection without significant        cinema, date, or showtime
+                                                                                                                        friction.                             rather than following one
+                                                                                                                                           fixed entry path.
+
+
+
+
+                          VIJEESH TV                            VIJEESH TV                            VIJEESH TV                            VIJEESH TV
+
+
+
+                   Promo eligibility may               Login/guest state is global         Users may want to             Once seats have been
+                    change based on venue,          booking context rather than       compare multiple cinemas          selected and proceed to
+                      showtime, format, or ticket         venue-specific state.              before committing to a             checkout, switching venues
+                         type.                                                           showtime, particularly when        should trigger a clear
+                                                                                                                         availability, timing, format, or        confirmation because it may
+                                                                                                   price differs.                       release the user's
+                                                                                                                   temporary seat hold.
+                          VIJEESH TV                            VIJEESH TV                            VIJEESH TV
+                                                                                                                                          VIJEESH TV
+
+
+                       Drop-off rises at seat                                            Users may select a cinema
+                         selection when occupancy                                         manually or discover
+                                is high                                                       cinemas through location-
+                                                                               based recommendations.
+
+
+
+
+
+                          VIJEESH TV                                                                 VIJEESH TV
+
+
+
+
+              Intuitive and Heuristics Analysis
+
+
+             VOX does show the selected venue throughout the booking journey   but it exposes the venue as information, not as
+                an actionable booking control.
+
+
+            The user's mental model
+
+                People think in terms of "this movie, around this time, somewhere convenient." Cinema is a flexible detail, and the
+                movie and time are the commitments. The booking flow assumes the opposite, treating venue as fixed once a
+               showtime is clicked.
+
+
+                     Current Mental model((
+
+                  Choose cinema ™ Choose showtime ™ Enter booking ™ Choose seats ™ Discover poor availability
+
+
+
+
+
+                     Desired Mental model((
+
+                  Choose cinema ™ Choose showtime ™ Enter booking ™ Choose seats ™ Discover poor availability ™
+                   Check other cinemas ™ Choose another cinema ™ Choose showtime ™ Select Seat ™ Continue
+
+
+
+                Heuristic Analysis
+
+
+
+                  Where               Heuristic                  Findings                                                      Severity
+
+
+               Homepage      H2                  Cinema + Movie selectors are prominent, No Major         0
+                                 Match with real world    issues
+
+                  What's On      H3                    Option can choose cinema/movie as a primary metrics.     0
+                                                  Flexibility
+
+                 Cinemas       H6                One long alphabetical list of cinemas, with no visible        2
+                                       Recognition over         sort by distance, time or experience.
+                                               recall
+
+                 Showtime           H1(                    Every showtime pill looks identical, with no hint of         3
+                                                   Visibility of system      seats left or how full the hall is. Users find out only
+                                         status                     after committing.
+
+                 Showtimes     H3                 Change Showtime" is the only exit. Users wanting         3
+                                    User control and        another venue must guess it helps. It also appears
+                                   freedom                before the seat map is usable.
+
+                    Restart         H7                      Login/ Continue as Guest status is lost, when they         4
+                                           Efficiency                 restart.
+
+               Summary       H3                  The bar shows venue, date and time, but no edit           2
+                                    User control and         control is visible, while Membership and Food & Drinks
+                                   freedom                get a pencil.
+
+                 Payments       H7                No ticket offers are auto applied while adding the card.         1
+                                                  Flexibility              Card validation is required which ads an additional
+                                                                    step.
+
+
+
+              Design Opportunity
+
+             VOX maintains venue visibility throughout the booking journey, but does not provide an equivalent venue-editing
+               mechanism when the user discovers new information at seat selection.When seat availability is poor, let users check
+                  other cinemas without leaving the booking context, then revalidate only the information that depends on the selected
+                 venue.
+
+
+
+           Competitive Analysis
+
+
+               The current VOX booking experience follows a linear, venue-specific journey, making  it difficult for users to change
+                cinemas once they have started booking. When users reach the seat-selection stage and find limited availability, there
+                        is no clear way to explore or compare another venue without leaving the flow.
+
+                  This creates a loss-of-context problem: users may have to repeat earlier steps, lose their booking progress, and
+                  mentally track information from the previous venue. For a time-sensitive, high-intent task like cinema booking, this
+               adds unnecessary cognitive load and increases the risk of flow abandonment.
+
+            How might we let users compare and switch venues at any point before payment, without losing their progress or
+                confidence in the booking?
+
+
+
+
+    Feature                                     Vox           Novo           Roxy             Reel           Cinepolis     Bookmyshow*
+
+
+Cinema first / Movie first discovery                            Strong
+
+
+
+Compare same movie across cinemas                        Strong              Strong
+
+
+
+Availability cue on showtime                                         Identical                                                                                           Strong
+
+
+
+Cinema/ details remains visible during booking                                                                                                                 Strong
+
+
+
+Clear booking context                                         Strong                                                                                            Strong
+
+
+
+Sign-in /Guest flexibility                             MAF            FB/Google                                                                       Strong
+
+
+
+Guest access till seat selection                                                  Poor               Strong
+
+
+
+Hold timer visible across the booking
+
+
+
+Venue switching during active booking                       Poor                                  Strong              Poor                                  Strong
+
+
+
+Venue switching from seat selection                                                                 Strong
+
+
+
+Seat tiers with prices on the map
+
+
+
+F&B integrated into journey                                    Strong
+
+
+
+Guest checkout                                                                 Poor              Easy              Easy                                Easy
+
+
+
+Validating offer                                                                                                                                     Easy Checkout
+
+
+
+
+
+                            Clearly Supported         Not Supported            Partial or less prominent
+
+
+               The competitive review shows that cinema selection and venue comparison are already well-established behaviours
+                 across VOX, Novo, Roxy, Reel, Cinépolis, and BookMyShow.
+
+
+
+              Prioritisation
+
+
+            Now we move from ˝what is the problem?˛ to ˝what should we solve first?˛
+
+                                       I listed every idea that addresses a verified finding from Sections 2 and 3, scored it, and sorted it with MoSCoW. You
+                asked for Must-have and Can-have, and  I added Should-have as a middle tier because several ideas are valuable but
+               depend on the Musts landing first.
+
+
+
+
+Feature                                                   Impact                                Effort                                 Priority
+
+
+Availability Cue: Based on seat availability.                      Very High                      Low                         P0
+
+
+
+Change Cinema : Allow users to go back to                                                            Very High                      Medium                       P0previous page during the booking experience.
+
+
+
+Seat tiers with prices on the map.                                High                       Medium                       P0
+
+
+
+Nearby sorting: allow to sort based on the                                                   Medium                       Low                               P1distance.
+
+
+
+Login: Move after the seat map.                           Medium                      Medium                             P1
+
+
+
+Move the summary to top for easy navigation.                 Low                             High                          P2
+
+
+
+Resume-booking link for an interrupted flow.                  Low                             High                          P2
+
+
+
+Change Showtime: Restricted to same Cinema,                                                  Low                        Low                          P2Give option to view all cinemas.
+
+
+
+
+            The resulting design scope
+
+
+
+                         In scope                                         Out of scope
+
+                     Cinema switching                                    Movie discovery redesign
+                       Seat availability cue                                     Login redesign
+                   Move login after seat selection                       F&B redesign
+                         Sorting by distance                                 Payment redesign
+                       Seat tier / pricing                                       Loyalty/membership redesign
