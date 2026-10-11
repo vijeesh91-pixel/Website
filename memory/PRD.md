@@ -86,6 +86,14 @@ User supplied new cover images for Vox/Poonch/Oddup tiles, final descriptions fo
 - Poonch (`PoonchCaseStudy.jsx`) and Vox (`VoxCaseStudy.jsx`) header project-label icons swapped from lucide placeholders to the real logo images (`Rectangle 1228.webp` Poonch mark, `Rectangle 1229.webp` VOX mark) inside the existing `.case-project-icon` box; Vox box styled white to match its logo background.
 - Self-verified via screenshots only (no testing_agent) per no-forced-testing preference: Work tiles, Oddup/Print coming-soon pages, Vox/Poonch icons all render correctly, no layout issues.
 
+## Ninth iteration: Coming-soon page pixel-matched to original design — 2026-10-11
+User: "Keep the design as it is. White background. Large and bold Oops! text. Check to match 100% the original design." Re-analyzed the supplied 1920×1259 design screenshot (`2b9baeca55fbaf5d_404.png`) pixel-by-pixel (PIL) to extract exact colors/sizes/positions.
+- `ComingSoon.css` rewritten: page background pure white (was cream); column left-aligned (was centered) matching the original's consistent left edge (~28% from left) across heading/illustration/paragraph/links.
+- "Oops!" heading: `clamp(72px, 10.6vw, 200px)`, weight 800, color `#363636` (sampled exactly), stacked above illustration with `z-index` so text renders in front of the overlapping character.
+- Illustration pulled up with negative margin to recreate the original's overlap with the heading.
+- Paragraph color `#6b7280`, "minor update" highlight `#5bc34e`, links `#0061fc` — all sampled directly from the reference screenshot.
+- Verified desktop (1920×1100) and mobile (390×844) screenshots match the reference closely.
+
 ## Prioritized backlog
 - P0: No known unresolved core defects. Previously unverified continuous-wheel/pawl-sound changes now verified in iteration 6; audio teardown follow-up also passed.
 - P1: All six navigation sections, Poonch and Vox case studies complete. Receive assets and exact copy for Oddup and Print/Digital; those two tiles remain intentionally non-clickable.
