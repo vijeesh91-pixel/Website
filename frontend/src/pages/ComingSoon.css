@@ -1,0 +1,15 @@
+.coming-soon-page { min-height: 100svh; background: var(--cream); color: var(--ink); display: flex; align-items: center; justify-content: center; padding: 48px 24px; }
+.coming-soon-column { display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 560px; }
+.coming-soon-eyebrow { margin: 0 0 6px; font-size: 10px; letter-spacing: .2em; font-weight: 600; color: #8a8a8a; }
+.coming-soon-heading { font-size: clamp(48px, 7vw, 76px); line-height: 1; letter-spacing: -.04em; font-weight: 700; color: #2b2b2b; margin: 0; outline: none; }
+.coming-soon-illustration { width: min(100%, 480px); height: auto; margin-top: -32px; }
+.coming-soon-description { font-size: 16px; line-height: 1.6; color: #666; margin: 8px 0 28px; }
+.coming-soon-highlight { color: #3ba55d; font-weight: 600; }
+.coming-soon-links { display: flex; align-items: center; gap: 12px; font-size: 14px; }
+.coming-soon-link { display: inline-flex; align-items: center; gap: 6px; color: #2f6fed; text-decoration: none; }
+.coming-soon-link:hover { text-decoration: underline; }
+.coming-soon-divider { color: #ccc; }
+@media (max-width: 640px) {
+  .coming-soon-heading { font-size: clamp(40px, 12vw, 56px); }
+  .coming-soon-illustration { margin-top: -18px; }
+}

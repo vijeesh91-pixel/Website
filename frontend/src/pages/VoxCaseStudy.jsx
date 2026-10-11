@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Clapperboard, ArrowUpRight } from 'lucide-react';
+import { ArrowLeft, ArrowUpRight } from 'lucide-react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { CaseStudyImage, CaseStudyText } from '../components/case-study/CaseStudyBlocks';
 import { VoxNotes, VoxHeuristics, VoxComparison, VoxPriorities, VoxScope } from '../components/case-study/VoxResearch';
@@ -17,7 +17,7 @@ export default function VoxCaseStudy() {
   return <main className="case-page vox-page" data-testid="vox-case-study">
     <motion.header className="case-header case-column" initial={reduced ? false : { opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, ease: revealEase }}>
       <Link to="/portfolio" className="case-back" data-testid="vox-back-top"><ArrowLeft size={14} aria-hidden="true" /> Back to Work</Link>
-      <div className="case-project-label" data-testid="vox-project-label"><Clapperboard size={21} aria-hidden="true" /><span>Vox Cinemas</span></div>
+      <div className="case-project-label" data-testid="vox-project-label"><span className="case-project-icon" aria-hidden="true"><img src="https://customer-assets-lqy194kg.emergentagent.net/job_portfolio-landing-96/artifacts/6990476a84cedb9c_Rectangle%201229.webp" alt="" width="38" height="38" data-testid="vox-project-icon" /></span><span>Vox Cinemas</span></div>
       <h1 ref={heading} tabIndex={-1} data-testid="vox-case-title">{copy.title}</h1>
     </motion.header>
     <CaseStudyImage image={images.hero} id="vox-hero" hero />

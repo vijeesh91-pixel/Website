@@ -80,6 +80,12 @@ User supplied new cover images for Vox/Poonch/Oddup tiles, final descriptions fo
 - `public/favicon.webp` downloaded from supplied `FAVI.webp` asset; `public/index.html` icon link switched from `favicon.svg` to `favicon.webp`.
 - Verified via self-screenshot of `/portfolio` only (user asked to skip testing_agent); new images/copy render correctly, no layout breakage.
 
+## Eighth iteration: Oddup/Print temp case studies + real header logos — 2026-10-11
+- Added reusable `pages/ComingSoonCaseStudy.jsx` + `ComingSoon.css` ("Oops! ... under a minor update" design, illustration `4afc6791e6e0a3ab_404 image.webp`); routed `/portfolio/oddup` and `/portfolio/print` to it via `App.js`, each with its own eyebrow label.
+- `content/projects.js`: Oddup and Print tiles now have `path`, making both tiles clickable Links; Print & Digital description updated to the supplied brand-assets copy.
+- Poonch (`PoonchCaseStudy.jsx`) and Vox (`VoxCaseStudy.jsx`) header project-label icons swapped from lucide placeholders to the real logo images (`Rectangle 1228.webp` Poonch mark, `Rectangle 1229.webp` VOX mark) inside the existing `.case-project-icon` box; Vox box styled white to match its logo background.
+- Self-verified via screenshots only (no testing_agent) per no-forced-testing preference: Work tiles, Oddup/Print coming-soon pages, Vox/Poonch icons all render correctly, no layout issues.
+
 ## Prioritized backlog
 - P0: No known unresolved core defects. Previously unverified continuous-wheel/pawl-sound changes now verified in iteration 6; audio teardown follow-up also passed.
 - P1: All six navigation sections, Poonch and Vox case studies complete. Receive assets and exact copy for Oddup and Print/Digital; those two tiles remain intentionally non-clickable.

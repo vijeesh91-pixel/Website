@@ -1,7 +1,7 @@
 .vox-page { --vox-blue: #0765ec; --vox-navy: #090538; --vox-line: #dcdfe1; letter-spacing: 0; }
 .vox-page .case-header h1 { font-size: 40px; letter-spacing: 0; line-height: 1.18; }
-.vox-page .case-project-label { font-size: 18px; gap: 8px; }
-.vox-page .case-project-label svg { color: #4184b9; }
+.vox-page .case-project-label { font-size: 18px; gap: 11px; }
+.vox-page .case-project-icon { background: #fff; border: 1px solid #ececec; }
 .vox-page .case-text h2, .vox-page .case-text h3 { letter-spacing: 0; }
 .vox-page .case-major { margin-top: 84px; }
 .vox-page .case-facts { grid-template-columns: 1fr 1fr 1fr; padding-bottom: 56px; border-bottom: 1px solid #ededed; }

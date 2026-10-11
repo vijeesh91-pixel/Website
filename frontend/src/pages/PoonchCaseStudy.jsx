@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, PawPrint } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { CaseStudyImage, CaseStudyText } from '../components/case-study/CaseStudyBlocks';
 import { poonchImages as images, poonchBranding, poonchCopy as copy } from '../content/poonch';
@@ -14,7 +14,7 @@ export default function PoonchCaseStudy() {
   return <main className="case-page" data-testid="poonch-case-study">
     <motion.header className="case-header case-column" initial={reduced ? false : { opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, ease: revealEase }}>
       <Link to="/portfolio" className="case-back" data-testid="poonch-back-top"><ArrowLeft size={14} aria-hidden="true" /> Back to Work</Link>
-      <div className="case-project-label" data-testid="poonch-project-label"><span className="case-project-icon" aria-hidden="true"><PawPrint size={22} strokeWidth={1.7} /></span><span>Poonch Mobile App</span></div>
+      <div className="case-project-label" data-testid="poonch-project-label"><span className="case-project-icon" aria-hidden="true"><img src="https://customer-assets-lqy194kg.emergentagent.net/job_portfolio-landing-96/artifacts/d43930f40c0d7194_Rectangle%201228.webp" alt="" width="38" height="38" data-testid="poonch-project-icon" /></span><span>Poonch Mobile App</span></div>
       <h1 ref={heading} tabIndex={-1} data-testid="poonch-case-title">Driving Mobile Adoption Among Existing<br className="case-title-break" /> Website Users</h1>
     </motion.header>
     <CaseStudyImage image={images.hero} id="hero" hero />
