@@ -94,6 +94,9 @@ User: "Keep the design as it is. White background. Large and bold Oops! text. Ch
 - Paragraph color `#6b7280`, "minor update" highlight `#5bc34e`, links `#0061fc` — all sampled directly from the reference screenshot.
 - Verified desktop (1920×1100) and mobile (390×844) screenshots match the reference closely.
 
+## Tenth iteration: Resume updated — 2026-10-11
+User uploaded a new resume PDF. Updated the single source of truth `content/site.js` `resumeUrl` to the new file, and `ResumeDownload.jsx` download filename to `Vijeesh_Resume.pdf`. Verified end-to-end: curl 200 + valid 2-page PDF, and live Contact page download via Playwright confirmed correct filename/content. Landing, Profile, and Contact all share this component, so all three are updated.
+
 ## Prioritized backlog
 - P0: No known unresolved core defects. Previously unverified continuous-wheel/pawl-sound changes now verified in iteration 6; audio teardown follow-up also passed.
 - P1: All six navigation sections, Poonch and Vox case studies complete. Receive assets and exact copy for Oddup and Print/Digital; those two tiles remain intentionally non-clickable.

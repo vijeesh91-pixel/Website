@@ -18,7 +18,7 @@ export const ResumeDownload = ({ testId, className = 'personal-resume', children
       const url = URL.createObjectURL(blob);
       const anchor = document.createElement('a');
       anchor.href = url;
-      anchor.download = 'Vijeesh-CV.pdf';
+      anchor.download = 'Vijeesh_Resume.pdf';
       document.body.appendChild(anchor);
       anchor.click();
       anchor.remove();

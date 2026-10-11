@@ -2,7 +2,7 @@
 export const site = {
   name: 'Vijeesh Thattante Valappil',
   portfolioPath: '/portfolio',
-  resumeUrl: 'https://customer-assets-lqy194kg.emergentagent.net/job_portfolio-landing-96/artifacts/suu4o393_Vijeesh-CV.pdf',
+  resumeUrl: 'https://customer-assets-lqy194kg.emergentagent.net/job_portfolio-landing-96/artifacts/b1343728d908ea96_Vijeesh_Resume.pdf',
   phone: '+971509045108',
   email: 'vijeesh91@gmail.com',
   background: 'https://customer-assets-cm19k8pv.emergentagent.net/job_2ec803a4-e045-448b-8706-a81a2f68338d/artifacts/rl01xy6f_Background%20Image%20full%20size.webp',
