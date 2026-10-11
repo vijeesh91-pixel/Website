@@ -17,7 +17,7 @@ export default function PublicationPage({ section }) {
         <div className="publication-container">
           <header className="work-intro">
             <h1 ref={heading} tabIndex={-1} data-testid={`${section}-heading`}>{section === 'writing' ? 'Writing,' : 'Patent'}</h1>
-            <p data-testid={`${section}-introduction`}>Professional work for NoBroker &amp; Convozen has been listed here. For academic and internship projects, head over to Behance</p>
+            <p data-testid={`${section}-introduction`}>{section === 'writing' ? 'Thoughts, ideas, and perspectives on UX design, emerging technology, and the evolving role of designers.' : 'Product conceptualised and developed between 2014 and 2018, combining engineering, innovation, and sustainable technology.'}</p>
           </header>
           {section === 'writing' ? <WritingContent /> : <PatentContent />}
         </div>

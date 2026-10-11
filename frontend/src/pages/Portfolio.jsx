@@ -21,7 +21,7 @@ export const Portfolio = () => {
         initial={reduced ? false : { opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .65, ease: revealEase }}>
         <header className="work-intro">
           <h1 ref={titleRef} tabIndex={-1} data-testid="work-heading">Work,</h1>
-          <p data-testid="work-introduction">Professional work for NoBroker &amp; Convozen has been listed here. For academic and internship projects, head over to Behance</p>
+          <p data-testid="work-introduction">Selected professional projects across product design, UX, and digital experiences.</p>
         </header>
         <ProjectCarousel carousel={carousel} />
       </motion.main>

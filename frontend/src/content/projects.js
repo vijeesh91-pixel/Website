@@ -7,21 +7,21 @@ export const projects = [
   {
     id: 'vox', title: 'Vox Booking Experience', category: 'Mobile',
     path: '/portfolio/vox',
-    description: 'Descriptions and details goes here',
-    image: `${assetRoot}yrsahgjm_Vox_CS1.webp`,
+    description: 'Redesigned the cinema booking journey to simplify venue switching, movie selection, showtimes, and seat booking for a more seamless ticket-purchasing experience…',
+    image: `${assetRoot}ba7bdc924ed75bea_Vox_CS1.webp`,
     alt: 'VOX Cinemas identity on a deep blue background',
   },
   {
-    id: 'poonch', title: 'Poonch food delivery', category: 'Mobile',
+    id: 'poonch', title: 'Poonch Food Delivery', category: 'Mobile',
     path: '/portfolio/poonch',
-    description: 'Descriptions and details goes here',
-    image: `${assetRoot}221c5nfo_Poonch_CS1.webp`,
+    description: 'The goal was to extend the existing web experience into a seamless mobile journey for existing users. From discovering the app and setting meal preferences to exploring meals…',
+    image: `${assetRoot}6914fd456ec9d813_Poonch_CS1.webp`,
     alt: 'Poonch food delivery mobile experience on a phone held against a blue shirt',
   },
   {
     id: 'oddup', title: 'Oddup', subtitle: '-Startup, ICO, and cryptocurrency', category: 'Web', wide: true,
-    description: 'Descriptions and details goes here',
-    image: `${assetRoot}t0pahupl_Oddup_CS1.webp`,
+    description: 'From its early-stage concept and initial product design to ongoing iterations and current updates. Shaped and evolved data-rich web experiences, dashboards, and research tools, transforming complex startup, ICO, and cryptocurrency data into intuitive, scalable user experiences.',
+    image: `${assetRoot}6250829de4d0533c_Oddup_CS1.webp`,
     alt: 'Oddup startup research and investment dashboard displayed on a monitor',
   },
   {

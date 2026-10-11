@@ -72,6 +72,14 @@ Order: Vox Booking Experience / Mobile; Poonch food delivery / Mobile; Oddup -St
 - Mobile screenshot: `/app/test_reports/artifacts_iteration_2/portfolio_mobile_390x844_clean.jpeg`.
 - Physical iOS/Android hardware was not available; browser-emulated touch was verified.
 
+## Seventh iteration: Work/Writing/Patent copy + new cover images + favicon — 2026-10-11
+User supplied new cover images for Vox/Poonch/Oddup tiles, final descriptions for Work intro, Vox, Poonch, Oddup tiles, Writing intro, Patent intro, and a new favicon (`FAVI.webp`). Explicitly said not to run testing_agent after this change.
+- `content/projects.js`: swapped Vox/Poonch/Oddup `image` URLs to new assets (`ba7bdc924ed75bea_Vox_CS1.webp`, `6914fd456ec9d813_Poonch_CS1.webp`, `6250829de4d0533c_Oddup_CS1.webp`); updated titles/descriptions verbatim as supplied. Print tile image/description unchanged (no new asset supplied).
+- `pages/Portfolio.jsx`: Work intro copy updated to "Selected professional projects across product design, UX, and digital experiences."
+- `pages/PublicationPage.jsx`: Writing intro and Patent intro copy updated per user text.
+- `public/favicon.webp` downloaded from supplied `FAVI.webp` asset; `public/index.html` icon link switched from `favicon.svg` to `favicon.webp`.
+- Verified via self-screenshot of `/portfolio` only (user asked to skip testing_agent); new images/copy render correctly, no layout breakage.
+
 ## Prioritized backlog
 - P0: No known unresolved core defects. Previously unverified continuous-wheel/pawl-sound changes now verified in iteration 6; audio teardown follow-up also passed.
 - P1: All six navigation sections, Poonch and Vox case studies complete. Receive assets and exact copy for Oddup and Print/Digital; those two tiles remain intentionally non-clickable.
