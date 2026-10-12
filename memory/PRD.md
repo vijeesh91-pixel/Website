@@ -104,6 +104,8 @@ User: "Update the temporary page of oddup and print to this page. Make it exactl
 - `ComingSoon.css` fully rewritten: white background, flex row (text + fixed-width illustration column), responsive stack to column on ≤860px.
 - Verified desktop (1920×1100) and mobile (390×844) screenshots match the new reference.
 
+- Follow-up fix (2026-10-12): illustration repositioned from a centered flex item to `position: absolute; bottom: 0` so the sleeve runs off the viewport's bottom edge exactly like the reference; `display: none` on the illustration at ≤860px per explicit request to hide it on mobile. Text block simplified back to a single left-padded column (no more row/padding-right hack that was over-constraining wrap width). Verified 1920×1000, 1366×768, and 390×844.
+
 ## Prioritized backlog
 - P0: No known unresolved core defects. Previously unverified continuous-wheel/pawl-sound changes now verified in iteration 6; audio teardown follow-up also passed.
 - P1: All six navigation sections, Poonch and Vox case studies complete. Receive assets and exact copy for Oddup and Print/Digital; those two tiles remain intentionally non-clickable.
