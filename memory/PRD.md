@@ -108,13 +108,13 @@ User: "Update the temporary page of oddup and print to this page. Make it exactl
 
 ## Prioritized backlog
 - P0: No known unresolved core defects. Previously unverified continuous-wheel/pawl-sound changes now verified in iteration 6; audio teardown follow-up also passed.
-- P1: All six navigation sections, Poonch and Vox case studies complete. Receive assets and exact copy for Oddup and Print/Digital; those two tiles remain intentionally non-clickable.
-- P1: Receive finalized Work tile descriptions; existing supplied placeholder descriptions are unchanged.
+- P1: All six navigation sections, Poonch, Vox, and Digital & Branding pages complete. Await user visual feedback on Digital & Branding and supplied content/assets for the real Oddup case study; Oddup is clickable and currently shows its intentionally temporary maintenance page.
+- Complete: Finalized descriptions and updated cover assets for all four Work tiles are connected.
 - Complete: Resume PDF, telephone, email and all social links supplied and connected.
 - P2: Rich project case studies and focused contact conversion after content is supplied.
 
 ## Next tasks
-Await user feedback on Vox or the next project case-study assets/copy. Preserve all six sections, Poonch and Vox. Do not invent missing project copy. Optional P2 enhancement, not approved or implemented: section navigation for long case studies.
+Await user feedback on Digital & Branding, or assets/copy for Oddup. Preserve all six sections, Poonch, Vox, Digital & Branding, resume, and existing maintenance design. Do not invent missing project copy. Optional P2 enhancement, not approved or implemented: section navigation for long galleries/case studies.
 
 ## Sixth iteration: Vox Booking Experience complete — 2026-10-11
 User requested the first Work tile's case study, supplying images in batches, explicitly asking to wait until all uploads were complete and to include the tables for readability. User initially requested no testing. Engineering validation was performed as required. After the 195px-wide overview proved unreadable, requested readable copy rather than inventing it. User supplied two PDFs and said: "I've uploaded it in two parts due to length restrictions. Ask me in case of any doubt, don't generate any content on your own."
@@ -200,3 +200,30 @@ Asked for external destinations; user supplied all six. Reused sidebar, logo, ty
 
 ### Validation
 `/app/test_reports/iteration_3.json`: all checks passed, no defects. Tested desktop 1920×800/1259, tablet 768×1024, mobile 390×844/320 width, correct links/new tabs, direct reloads, navigation, active markers, accessible focus, images, no horizontal overflow, no carousel interception, existing Work/landing regression. Production build succeeded. No new credentials, APIs or mocked flows.
+
+## Twelfth iteration: Digital & Branding gallery — 2026-10-21
+
+### User request and approval
+User: “Now let's create the \"Print & Digital\" page. 1. Update the name to \"Digital & Branding.\" and update the image to the uploaded image (File name: TILE.webp). 2. I've uploaded the page design in PDF format. Create the page exactly as it is. The images within the page are in a grid; each grid is square in size. I'll upload all the images separately. There are 60 images in total in WebP format. Ask me to upload the images before starting.”
+Waited for batch uploads until user said “All uploaded. \"Explore more\" will take the page behance link.” User skipped the Behance URL question, accepting the existing site destination `https://www.behance.net/vijeesh_tv`.
+
+### Authoritative reference and assets
+- PDF: `https://customer-assets-lqy194kg.emergentagent.net/job_portfolio-landing-96/artifacts/5be3d9283b525837_Print%20and%20media.pdf` (one 1920×10081 page).
+- All 60 assets verified available: 57 gallery images, `ICON.webp`, `COVER.webp`, and `TILE.webp`. The page displays 59 images; TILE is on Work. No missing uploads or invented replacement assets.
+- Original PDF, exact native text, geometry, labeled contact sheet, asset manifest, downloaded originals, and reference renders preserved in `/app/reference_assets/branding/`.
+- IMPORTANT: initial AI file analysis misidentified grid counts, asset groups, and copy. It was discarded in favor of native PDF text/geometry and visual inspection. PyMuPDF extraction tooling is isolated under `/tmp/branding-pdf-tools`, not an app dependency.
+- Exact row-major order: logos `g1,g2,g3,g9,g8,g4,g6,g12,g5,g10,g7,g11`; Nestle Away `N1,N2,N8,N4,N5,N3,N6,N7,N9`; coffee `R1–R9`; Rana `S1–S9`; journal `L1–L9`; print `F1,F2,F3,F4,F5,F6,F9,F8,F7`.
+
+### Implemented
+- Replaced only `/portfolio/print` with the real gallery. Preserved its URL/bookmarks, updated browser title to Digital & Branding, heading focus, and top/bottom Work navigation. Oddup remains on its maintenance page.
+- Work tile name is now Digital & Branding; uses supplied green-background TILE. Existing user-authored tile description is unchanged.
+- Original ICON and light-background COVER, PDF introductory heading, Logo Space/Brand Space/Print Space descriptions, 12-logo grid, four 9-image brand grids, and 9-image print grid. PDF Logo Space body starts lowercase `collection` without `A`; preserved intentionally.
+- White canvas, blue section headings, 864px copy column, 1179px image column, square cells, reference spacing, and underlined Explore more link with external arrow. Link opens existing Behance profile safely in a new tab.
+- Desktop/tablet 3-column galleries. Below 600px, logos use 2 columns and other galleries use 1 column for artwork legibility. Lazy-loaded gallery WebPs, reserved dimensions, scoped styling, reduced-motion-aware header reveal, accessible alt text and unique test IDs.
+- New files: `content/branding.js`, `components/case-study/BrandingGallery.jsx`, `pages/DigitalBranding.jsx`, `pages/DigitalBranding.css`. Updated `content/projects.js` and `App.js` only in existing application code. No backend, auth, external service integration, upload system, or mocked flow.
+
+### Verification and current status
+- Initial smoke at 1920×800 passed. Focused frontend report `/app/test_reports/iteration_7.json`: all images loaded, correct order/URLs, copy, square cells, Work navigation, Behance destination, title/focus/reload/reduced motion, unchanged Oddup, no JS errors, and no horizontal overflow at 320/768/1024/1440. No defects reported; testing agent only added its report.
+- Final footer underline/weight aligned to PDF; subsequent `yarn build` passed and external route returned HTTP 200.
+- No credentials created or modified. No known blocking issue. Exact visual acceptance remains pending user review; no pixel-diff or user approval claimed.
+- Next: user review; real Oddup content when supplied. P2 optional, unapproved enhancement: jump links for long gallery sections.

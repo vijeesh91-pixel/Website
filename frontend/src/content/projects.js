@@ -1,3 +1,5 @@
+import { brandingAssets } from './branding';
+
 const assetRoot = 'https://customer-assets-lqy194kg.emergentagent.net/job_portfolio-landing-96/artifacts/';
 
 export const portfolioLogo = `${assetRoot}s37j9nmc_Logo.png`;
@@ -26,10 +28,10 @@ export const projects = [
     alt: 'Oddup startup research and investment dashboard displayed on a monitor',
   },
   {
-    id: 'print', title: 'Print and Digital', category: 'Branding',
+    id: 'print', title: 'Digital & Branding', category: 'Branding',
     path: '/portfolio/print',
     description: 'A collection of brand assets, creative concepts, and design explorations spanning print, digital media, marketing collateral, and visual communication across the brand.',
-    image: `${assetRoot}fwtzlhze_Print_CS1.webp`,
-    alt: 'Print and Digital lettering in yellow and white on a green background',
+    image: brandingAssets.tile,
+    alt: 'Oddup digital campaign designs on a green background',
   },
 ];

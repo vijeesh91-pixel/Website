@@ -1,0 +1,74 @@
+.branding-page {
+  --branding-ink: #363636;
+  --branding-muted: #797e8c;
+  --branding-blue: #0061ff;
+  --branding-wide: 1179px;
+  --branding-copy: 864px;
+  position: relative;
+  min-height: 100svh;
+  padding: 128px 28px 128px;
+  background: #fff;
+  color: var(--branding-ink);
+  letter-spacing: 0;
+}
+.branding-page::before { content: ''; position: absolute; top: 98px; left: 0; right: 0; height: 1px; background: #dbdbdb; }
+.branding-wide, .branding-copy { width: 100%; margin-left: auto; margin-right: auto; }
+.branding-wide { max-width: var(--branding-wide); }
+.branding-copy { max-width: var(--branding-copy); }
+.branding-back { display: inline-flex; align-items: center; gap: 7px; min-height: 24px; color: var(--branding-muted); font-size: 16px; line-height: 24px; text-decoration: none; transition: color .2s ease; }
+.branding-back svg { flex: 0 0 auto; stroke-width: 1.5; transition: transform .2s ease; }
+.branding-back:hover { color: var(--branding-blue); }
+.branding-back:hover svg { transform: translateX(-3px); }
+.branding-project-label { display: flex; align-items: center; gap: 6px; margin-top: 38px; font-size: 24px; line-height: 30px; }
+.branding-project-label img { display: block; width: 37px; height: 37px; flex: 0 0 auto; object-fit: contain; }
+.branding-header h1 { margin: 36px 0 0; font-size: 45px; font-weight: 400; line-height: 54px; letter-spacing: 0; outline: none; }
+.branding-cover { margin-top: 38px; }
+.branding-cover img { display: block; width: 100%; height: auto; aspect-ratio: 1179 / 587; object-fit: contain; border-radius: 16px; }
+.branding-section { margin-top: 88px; }
+.branding-section + .branding-section { margin-top: 88px; }
+.branding-section h2 { color: var(--branding-blue); font-size: 24px; font-weight: 400; line-height: 30px; margin: 0 0 38px; }
+.branding-section p { margin: 0; font-size: 16px; font-weight: 400; line-height: 24px; }
+.branding-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 6px; row-gap: 2px; margin-top: 64px; }
+.branding-grid-logos { row-gap: 6px; }
+.branding-grid + .branding-grid { margin-top: 128px; }
+.branding-cell { position: relative; min-width: 0; aspect-ratio: 1; margin: 0; overflow: hidden; background: #fff; }
+.branding-cell img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.branding-footer { display: flex; flex-direction: column; align-items: flex-start; gap: 76px; margin-top: 84px; }
+.branding-explore { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; color: #000; font-size: 18px; font-weight: 500; line-height: 26px; text-decoration: underline; text-underline-offset: 4px; transition: color .2s ease; }
+.branding-explore svg { color: #7697c4; stroke-width: 1.7; flex: 0 0 auto; transition: transform .2s ease; }
+.branding-explore:hover { color: var(--branding-blue); }
+.branding-explore:hover svg { transform: translate(2px, -2px); }
+.branding-back:active, .branding-explore:active { opacity: .7; }
+@media (max-width: 1024px) {
+  .branding-page { padding-top: 80px; padding-bottom: 80px; }
+  .branding-page::before { top: 50px; }
+  .branding-copy { max-width: 740px; }
+  .branding-header h1 { font-size: 40px; line-height: 48px; }
+  .branding-grid + .branding-grid { margin-top: 80px; }
+}
+@media (max-width: 767px) {
+  .branding-page { padding: 36px 24px 60px; }
+  .branding-page::before { top: 20px; }
+  .branding-back { min-height: 32px; font-size: 14px; }
+  .branding-back svg { width: 20px; height: 20px; }
+  .branding-project-label { margin-top: 28px; gap: 8px; font-size: 20px; line-height: 28px; }
+  .branding-project-label img { width: 32px; height: 32px; }
+  .branding-header h1 { margin-top: 24px; font-size: 32px; line-height: 40px; }
+  .branding-cover { margin-top: 32px; }
+  .branding-cover img { border-radius: 8px; }
+  .branding-section, .branding-section + .branding-section { margin-top: 48px; }
+  .branding-section h2 { font-size: 18px; line-height: 26px; margin-bottom: 22px; }
+  .branding-section p { font-size: 14px; line-height: 22px; }
+  .branding-grid { margin-top: 32px; gap: 4px; }
+  .branding-grid + .branding-grid { margin-top: 48px; }
+  .branding-footer { margin-top: 48px; gap: 40px; }
+}
+@media (max-width: 599px) {
+  .branding-grid { grid-template-columns: minmax(0, 1fr); }
+  .branding-grid-logos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 359px) {
+  .branding-page { padding-left: 20px; padding-right: 20px; }
+  .branding-header h1 { font-size: 28px; line-height: 36px; }
+  .branding-project-label { font-size: 18px; }
+}

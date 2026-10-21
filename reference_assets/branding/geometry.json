@@ -1,0 +1,2601 @@
+{
+  "images": [
+    {
+      "number": 0,
+      "bbox": [
+        528.0,
+        190.0,
+        565.0,
+        227.0
+      ],
+      "transform": [
+        37.0,
+        0.0,
+        -0.0,
+        37.0,
+        528.0,
+        190.0
+      ],
+      "width": 512,
+      "height": 512,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 8298,
+      "digest": "b'\\xb7*k\\x9e\\xca\\x1f\\xc1O\\x93\\xefI\\xfe3\\xb7t\\x10'",
+      "has-mask": true,
+      "xref": 524
+    },
+    {
+      "number": 1,
+      "bbox": [
+        371.0,
+        1341.0,
+        760.0,
+        1730.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        371.0,
+        1341.0
+      ],
+      "width": 778,
+      "height": 778,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 6808,
+      "digest": "b'l\\xe6\\xc2\\x17f\\xbeK\\x92\\x12\\x0ec\\xf8\\x9b\\x8c9\\xba'",
+      "has-mask": true,
+      "xref": 572
+    },
+    {
+      "number": 2,
+      "bbox": [
+        766.0,
+        1341.0,
+        1155.0,
+        1730.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        766.0,
+        1341.0
+      ],
+      "width": 778,
+      "height": 778,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 7136,
+      "digest": "b'\\xd0\\x18\\xfeG\\xecY\\x89\\x8dL<sC8\\x8e8b'",
+      "has-mask": true,
+      "xref": 548
+    },
+    {
+      "number": 3,
+      "bbox": [
+        1161.0,
+        1341.0,
+        1550.0,
+        1730.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        1161.0,
+        1341.0
+      ],
+      "width": 778,
+      "height": 778,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 12045,
+      "digest": "b'\\x0b\\x86\\xdc\\xe09\\xf0\\xfaa0\\xcb\\x01\\xe9W\\x84\\x18\\xff'",
+      "has-mask": true,
+      "xref": 464
+    },
+    {
+      "number": 4,
+      "bbox": [
+        371.0,
+        1736.0,
+        760.0,
+        2125.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        371.0,
+        1736.0
+      ],
+      "width": 778,
+      "height": 778,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 11618,
+      "digest": "b'\\xfa+)\\x19-\\xc3\\x1b\\xef\\xdf\\xaf\\x19\\xf0qy\\xb3\\x03'",
+      "has-mask": true,
+      "xref": 564
+    },
+    {
+      "number": 5,
+      "bbox": [
+        766.0,
+        1736.0,
+        1155.0,
+        2125.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        766.0,
+        1736.0
+      ],
+      "width": 778,
+      "height": 778,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 6808,
+      "digest": "b'l\\xe6\\xc2\\x17f\\xbeK\\x92\\x12\\x0ec\\xf8\\x9b\\x8c9\\xba'",
+      "has-mask": true,
+      "xref": 572
+    },
+    {
+      "number": 6,
+      "bbox": [
+        1161.0,
+        1736.0,
+        1550.0,
+        2125.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        1161.0,
+        1736.0
+      ],
+      "width": 778,
+      "height": 778,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 10592,
+      "digest": "b'\\xb2\\x82$0, \\x9c\\n\\xf6\\r-H5\\xa9\\x8b\\xa6'",
+      "has-mask": true,
+      "xref": 556
+    },
+    {
+      "number": 7,
+      "bbox": [
+        371.0,
+        2131.0,
+        760.0,
+        2520.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        371.0,
+        2131.0
+      ],
+      "width": 778,
+      "height": 778,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 15556,
+      "digest": "b'k,J*\\xcb\\xb1}J\\x16\\xc1j9W\\x91\\xf8\\xc1'",
+      "has-mask": true,
+      "xref": 552
+    },
+    {
+      "number": 8,
+      "bbox": [
+        766.0,
+        2131.0,
+        1155.0,
+        2520.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        766.0,
+        2131.0
+      ],
+      "width": 778,
+      "height": 778,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 6808,
+      "digest": "b'l\\xe6\\xc2\\x17f\\xbeK\\x92\\x12\\x0ec\\xf8\\x9b\\x8c9\\xba'",
+      "has-mask": true,
+      "xref": 572
+    },
+    {
+      "number": 9,
+      "bbox": [
+        1161.0,
+        2131.0,
+        1550.0,
+        2520.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        1161.0,
+        2131.0
+      ],
+      "width": 778,
+      "height": 778,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 17696,
+      "digest": "b'\\xfa\\x97$nLe\\x19\\xae\\x8f\\x8a\\xd6\\x86\\xb5KDB'",
+      "has-mask": true,
+      "xref": 568
+    },
+    {
+      "number": 10,
+      "bbox": [
+        371.0,
+        2526.0,
+        760.0,
+        2915.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        371.0,
+        2526.0
+      ],
+      "width": 778,
+      "height": 778,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 14340,
+      "digest": "b'\\x08\\x12c\\xc6B\\x05;\\xd7\\x8e\\xc1\\xf9\\xa7\\xbd\\xcd\\x1b*'",
+      "has-mask": true,
+      "xref": 520
+    },
+    {
+      "number": 11,
+      "bbox": [
+        766.0,
+        2526.0,
+        1155.0,
+        2915.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        766.0,
+        2526.0
+      ],
+      "width": 778,
+      "height": 778,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 7776,
+      "digest": "b'E/\\x82\\xd4\\xe6 \\xdc\\x02()jJM\\x1c\\xed\\x1e'",
+      "has-mask": true,
+      "xref": 472
+    },
+    {
+      "number": 12,
+      "bbox": [
+        822.908203125,
+        2674.75634765625,
+        1098.269775390625,
+        2766.54345703125
+      ],
+      "transform": [
+        275.3616027832031,
+        0.0,
+        -0.0,
+        91.78720092773438,
+        822.908203125,
+        2674.75634765625
+      ],
+      "width": 2172,
+      "height": 724,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 118364,
+      "digest": "b'\\x1d-.\\x08\\xf2\\x8a\\x89\\xdc\\xce\\xde\\x92!\\x1cj\\xbd\\x95'",
+      "has-mask": true,
+      "xref": 540
+    },
+    {
+      "number": 13,
+      "bbox": [
+        1161.0,
+        2526.0,
+        1550.0,
+        2915.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        1161.0,
+        2526.0
+      ],
+      "width": 778,
+      "height": 778,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 6808,
+      "digest": "b'l\\xe6\\xc2\\x17f\\xbeK\\x92\\x12\\x0ec\\xf8\\x9b\\x8c9\\xba'",
+      "has-mask": true,
+      "xref": 572
+    },
+    {
+      "number": 14,
+      "bbox": [
+        -194.729248046875,
+        592.9893798828125,
+        1796.270751953125,
+        959.0106201171875
+      ],
+      "transform": [
+        1991.0,
+        0.0,
+        -0.0,
+        366.021240234375,
+        -194.729248046875,
+        592.9893798828125
+      ],
+      "width": 4096,
+      "height": 753,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 403362,
+      "digest": "b'\\x1d\\xad\\xb2\\x84\\xe8\\x9bKc\\xdc\\x8a\\x8d\\x85\\x97R\\xd5P'",
+      "has-mask": true,
+      "xref": 528
+    },
+    {
+      "number": 15,
+      "bbox": [
+        370.0,
+        3204.469970703125,
+        759.0,
+        3592.5302734375
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        388.06036376953125,
+        370.0,
+        3204.469970703125
+      ],
+      "width": 414,
+      "height": 413,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 23806,
+      "digest": "b'\\x92\\xb2\\xeb\\xf6\\xe5A\\xe6m\\xa7^\\x1dV\\x8d\\x15\\x95\\xca'",
+      "has-mask": true,
+      "xref": 444
+    },
+    {
+      "number": 16,
+      "bbox": [
+        765.0,
+        3202.09765625,
+        1154.0,
+        3594.902099609375
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        392.80438232421875,
+        765.0,
+        3202.09765625
+      ],
+      "width": 409,
+      "height": 413,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 24081,
+      "digest": "b'6\\x074\\xe4*\\xa3s!\\xb5\\x98\\x16qcx&\\x82'",
+      "has-mask": true,
+      "xref": 412
+    },
+    {
+      "number": 17,
+      "bbox": [
+        1156.5203857421875,
+        3197.620849609375,
+        1558.27880859375,
+        3599.379150390625
+      ],
+      "transform": [
+        401.7583923339844,
+        0.0,
+        -0.0,
+        401.7583923339844,
+        1156.5203857421875,
+        3197.620849609375
+      ],
+      "width": 724,
+      "height": 724,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 57767,
+      "digest": "b'H3\\\\\\xc6.6\\xfe\\t\\xb7\"\\x0c\\xf4\\n}\\x87='",
+      "has-mask": true,
+      "xref": 508
+    },
+    {
+      "number": 18,
+      "bbox": [
+        362.2284240722656,
+        3597.0,
+        766.7715454101562,
+        3982.0
+      ],
+      "transform": [
+        404.5431213378906,
+        0.0,
+        -0.0,
+        385.0,
+        362.2284240722656,
+        3597.0
+      ],
+      "width": 414,
+      "height": 394,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 15854,
+      "digest": "b'\\xc5\\xec)\\xe3v\\xf8\\x058\\xa4RR\\x87\\xfb\\x07|S'",
+      "has-mask": true,
+      "xref": 504
+    },
+    {
+      "number": 19,
+      "bbox": [
+        702.8333129882812,
+        3597.0,
+        1216.166748046875,
+        3982.0
+      ],
+      "transform": [
+        513.3333740234375,
+        0.0,
+        -0.0,
+        385.0000305175781,
+        702.8333129882812,
+        3597.0
+      ],
+      "width": 1920,
+      "height": 1440,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 46408,
+      "digest": "b'k\\xa9\\xe4\\xf2\\xde\\x03jY\\xe9\\xf8\\x10\\xacSD=_'",
+      "has-mask": true,
+      "xref": 532
+    },
+    {
+      "number": 20,
+      "bbox": [
+        1152.2283935546875,
+        3597.0,
+        1556.771484375,
+        3982.0
+      ],
+      "transform": [
+        404.5431213378906,
+        0.0,
+        -0.0,
+        385.0,
+        1152.2283935546875,
+        3597.0
+      ],
+      "width": 414,
+      "height": 394,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 16205,
+      "digest": "b'\\x83\\xae\\xfa\\x964\\x8e\\x9ft\\xcak\\xb1\\xac\\x1a*T>'",
+      "has-mask": true,
+      "xref": 492
+    },
+    {
+      "number": 21,
+      "bbox": [
+        370.0,
+        3986.0,
+        759.0,
+        4375.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0000305175781,
+        370.0,
+        3986.0
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 177868,
+      "digest": "b\"\\xd8\\x8c\\x8e\\xe2/\\t\\xb4\\x0e'lU\\xb1\\x0c\\xc3'\\xbd\"",
+      "has-mask": true,
+      "xref": 456
+    },
+    {
+      "number": 22,
+      "bbox": [
+        764.9483032226562,
+        3982.14208984375,
+        1161.6640625,
+        4378.85791015625
+      ],
+      "transform": [
+        396.7157897949219,
+        0.0,
+        -0.0,
+        396.7157897949219,
+        764.9483032226562,
+        3982.14208984375
+      ],
+      "width": 724,
+      "height": 724,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 39534,
+      "digest": "b'\\xf6JX5#\\xf7`p\\xd22\\xcaT\\xb9\\xd3\\x83\\t'",
+      "has-mask": true,
+      "xref": 488
+    },
+    {
+      "number": 23,
+      "bbox": [
+        1108.9937744140625,
+        3988.111572265625,
+        1612.892578125,
+        4490.283203125
+      ],
+      "transform": [
+        503.8987731933594,
+        0.0,
+        -0.0,
+        502.17156982421875,
+        1108.9937744140625,
+        3988.111572265625
+      ],
+      "width": 724,
+      "height": 724,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 35285,
+      "digest": "b\"\\xae\\x91\\xdb\\x15\\x8d\\xde?~p\\xa7\\xb2'\\xc1\\x1ce\\xfa\"",
+      "has-mask": true,
+      "xref": 512
+    },
+    {
+      "number": 24,
+      "bbox": [
+        370.0,
+        4503.0,
+        759.0,
+        4892.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        370.0,
+        4503.0
+      ],
+      "width": 418,
+      "height": 418,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 29449,
+      "digest": "b'\\xb3\\xb4>\\xac\\x11\\x8d7\\xea\\n$\\x0cX\\x17$\\xe3\\x9d'",
+      "has-mask": true,
+      "xref": 452
+    },
+    {
+      "number": 25,
+      "bbox": [
+        735.0,
+        4494.75732421875,
+        1154.4952392578125,
+        4914.25244140625
+      ],
+      "transform": [
+        419.4952697753906,
+        0.0,
+        -0.0,
+        419.49517822265625,
+        735.0,
+        4494.75732421875
+      ],
+      "width": 418,
+      "height": 418,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 35295,
+      "digest": "b'\\x8a\\xe9\\x1a\\xb8+u&\\x1dA\\t\\xfb\\xbc2\\xda}\\xab'",
+      "has-mask": true,
+      "xref": 432
+    },
+    {
+      "number": 26,
+      "bbox": [
+        1160.0,
+        4503.0,
+        1549.0,
+        4892.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0000305175781,
+        1160.0,
+        4503.0
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 212431,
+      "digest": "b\"%\\xee^Y\\x1d\\x046q\\x03<Y\\x85\\x82'\\xfe\\xc7\"",
+      "has-mask": true,
+      "xref": 424
+    },
+    {
+      "number": 27,
+      "bbox": [
+        370.0,
+        4890.13818359375,
+        766.722900390625,
+        5286.861328125
+      ],
+      "transform": [
+        396.722900390625,
+        0.0,
+        -0.0,
+        396.72296142578125,
+        370.0,
+        4890.13818359375
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 150174,
+      "digest": "b'\\xf2\\xd7\\x04q_\\xa9D~|5\\xadZ[\\x11\\x07\\x89'",
+      "has-mask": true,
+      "xref": 416
+    },
+    {
+      "number": 28,
+      "bbox": [
+        821.908203125,
+        5042.755859375,
+        1097.269775390625,
+        5134.54296875
+      ],
+      "transform": [
+        275.3616027832031,
+        0.0,
+        -0.0,
+        91.78720092773438,
+        821.908203125,
+        5042.755859375
+      ],
+      "width": 2172,
+      "height": 724,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 46602,
+      "digest": "b'\\x05=!\\xc3\\x10\\xbc\\xfd^\\xdb\\xde_\\x82q>\\xdfp'",
+      "has-mask": true,
+      "xref": 408
+    },
+    {
+      "number": 29,
+      "bbox": [
+        1150.357421875,
+        4889.1171875,
+        1549.122802734375,
+        5287.8828125
+      ],
+      "transform": [
+        398.7654113769531,
+        0.0,
+        -0.0,
+        398.7654113769531,
+        1150.357421875,
+        4889.1171875
+      ],
+      "width": 418,
+      "height": 418,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 30721,
+      "digest": "b'\\x1f5[\\xeb0<\\xa6\\xebY\\xf2\\x909y,\\xd2\\xb5'",
+      "has-mask": true,
+      "xref": 404
+    },
+    {
+      "number": 30,
+      "bbox": [
+        361.8658752441406,
+        5286.95703125,
+        765.8826904296875,
+        5690.9736328125
+      ],
+      "transform": [
+        404.0168151855469,
+        0.0,
+        -0.0,
+        404.016845703125,
+        361.8658752441406,
+        5286.95703125
+      ],
+      "width": 418,
+      "height": 418,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 27175,
+      "digest": "b'v\\x85\\x9e8|\\x02\\x00\\xf8\\x94*O\"\\xeb\\xd7c0'",
+      "has-mask": true,
+      "xref": 400
+    },
+    {
+      "number": 31,
+      "bbox": [
+        760.6538696289062,
+        5281.11572265625,
+        1157.423095703125,
+        5677.884765625
+      ],
+      "transform": [
+        396.76922607421875,
+        0.0,
+        -0.0,
+        396.76922607421875,
+        760.6538696289062,
+        5281.11572265625
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 208146,
+      "digest": "b'\\xd3\\x84\\x12\\xe1q\\xb1+J\\x91\\x1f\\xad\\x00\\xb7\\xe2-\\xaf'",
+      "has-mask": true,
+      "xref": 448
+    },
+    {
+      "number": 32,
+      "bbox": [
+        1160.0,
+        5285.0,
+        1549.0,
+        5674.0
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        1160.0,
+        5285.0
+      ],
+      "width": 418,
+      "height": 418,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 26337,
+      "digest": "b'\\x1b\\x18\"\\xfe\\xdcf7\\xf7\\x91\\xfa\\nI\\xf0\\xb2O\\n'",
+      "has-mask": true,
+      "xref": 420
+    },
+    {
+      "number": 33,
+      "bbox": [
+        366.77203369140625,
+        5804.0,
+        762.22802734375,
+        6199.46044921875
+      ],
+      "transform": [
+        395.4559631347656,
+        0.0,
+        -0.0,
+        395.4603271484375,
+        366.77203369140625,
+        5804.0
+      ],
+      "width": 414,
+      "height": 414,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 28480,
+      "digest": "b'\\x8b\\xf0m\\x0e\\x87\\xcft?pv\\xab\\x90y\\xefW\\xb7'",
+      "has-mask": true,
+      "xref": 476
+    },
+    {
+      "number": 34,
+      "bbox": [
+        765.0,
+        5802.65283203125,
+        1154.0,
+        6191.65283203125
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        388.9999694824219,
+        765.0,
+        5802.65283203125
+      ],
+      "width": 414,
+      "height": 414,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 18092,
+      "digest": "b'\\xcb\\x889\\xc4\\xeb\\x95\\xd46\\x05o\\xd3_\\x1am\\xe6N'",
+      "has-mask": true,
+      "xref": 428
+    },
+    {
+      "number": 35,
+      "bbox": [
+        1160.0,
+        5802.65283203125,
+        1549.0,
+        6191.65283203125
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        388.9999694824219,
+        1160.0,
+        5802.65283203125
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 248983,
+      "digest": "b'#\\n\\x97\\x9bIT_\\xe1\\xaeE\\xce\\xc5\\x85\\xc9\\xdc\\xe1'",
+      "has-mask": true,
+      "xref": 440
+    },
+    {
+      "number": 36,
+      "bbox": [
+        326.65087890625,
+        6177.6025390625,
+        783.2962646484375,
+        6634.2255859375
+      ],
+      "transform": [
+        456.6453552246094,
+        0.0,
+        -0.0,
+        456.623291015625,
+        326.65087890625,
+        6177.6025390625
+      ],
+      "width": 412,
+      "height": 412,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 28118,
+      "digest": "b'\\xed\\x84\\xd4t8~&Lm\\x17\\x1d\\x9f\\x1dh \\xc2'",
+      "has-mask": true,
+      "xref": 392
+    },
+    {
+      "number": 37,
+      "bbox": [
+        846.0,
+        6355.0,
+        914.0,
+        6394.0
+      ],
+      "transform": [
+        68.0,
+        0.0,
+        0.0,
+        39.0,
+        846.0,
+        6355.0
+      ],
+      "width": 68,
+      "height": 39,
+      "colorspace": 3,
+      "cs-name": "DeviceRGB",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 7956,
+      "digest": "b'\\xbb\\xbd\\xae~I\\xb7\\xf7\\xc9\\x05\\\\W\\xb7\\xc7\\xee\\xaa\\xc1'",
+      "has-mask": false,
+      "xref": 0
+    },
+    {
+      "number": 38,
+      "bbox": [
+        846.0,
+        6397.0,
+        909.0,
+        6424.0
+      ],
+      "transform": [
+        63.0,
+        0.0,
+        0.0,
+        27.0,
+        846.0,
+        6397.0
+      ],
+      "width": 63,
+      "height": 27,
+      "colorspace": 3,
+      "cs-name": "DeviceRGB",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 5103,
+      "digest": "b'\\xdd\\xbb\\xe7\\x11\\x16!G\\xbeT\\xb2\\xef\\xb1\\x81n\\xaf~'",
+      "has-mask": false,
+      "xref": 0
+    },
+    {
+      "number": 39,
+      "bbox": [
+        1160.0,
+        6194.95849609375,
+        1549.0,
+        6583.95849609375
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        1160.0,
+        6194.95849609375
+      ],
+      "width": 415,
+      "height": 415,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 27751,
+      "digest": "b'\\x86\\x12\\x05N\\x84\\x98%\\x88$\\r\\x1e \\x90\\xdf\\xb8R'",
+      "has-mask": true,
+      "xref": 436
+    },
+    {
+      "number": 40,
+      "bbox": [
+        362.1106262207031,
+        6588.42529296875,
+        767.3572998046875,
+        6993.67626953125
+      ],
+      "transform": [
+        405.2466735839844,
+        0.0,
+        -0.0,
+        405.25115966796875,
+        362.1106262207031,
+        6588.42529296875
+      ],
+      "width": 410,
+      "height": 410,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 26933,
+      "digest": "b'\\x16\\xae\\tS\\xcaW\\x92g\\xfa\\xcf\\x18\\tM\\xbc\\tS'",
+      "has-mask": true,
+      "xref": 468
+    },
+    {
+      "number": 41,
+      "bbox": [
+        740.5363159179688,
+        6574.56396484375,
+        1177.032470703125,
+        7011.0390625
+      ],
+      "transform": [
+        436.4961242675781,
+        0.0,
+        -0.0,
+        436.47509765625,
+        740.5363159179688,
+        6574.56396484375
+      ],
+      "width": 410,
+      "height": 410,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 30296,
+      "digest": "b'Y\\xd6\\x1b\\xa4\\x17G\\xf9Bq\\x83AB\\xe11\\x94Z'",
+      "has-mask": true,
+      "xref": 500
+    },
+    {
+      "number": 42,
+      "bbox": [
+        1160.0,
+        6587.26416015625,
+        1549.0,
+        6976.26416015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        388.9999694824219,
+        1160.0,
+        6587.26416015625
+      ],
+      "width": 414,
+      "height": 414,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 24509,
+      "digest": "b'\\x8e\\xd1\\x0c\\xcc\\xa5\\x1c\\xca\\xa2\\x10\\xe7-\\x05Sc\\xa4\\x12'",
+      "has-mask": true,
+      "xref": 388
+    },
+    {
+      "number": 43,
+      "bbox": [
+        370.0,
+        7104.916015625,
+        759.0,
+        7493.916015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0000305175781,
+        370.0,
+        7104.916015625
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 237091,
+      "digest": "b'\\xedy\\xc8\\xccU\\xf1\\xe5\\xb1\\x83h\\xb9\\x81}\\xe4\\xb2\\x89'",
+      "has-mask": true,
+      "xref": 384
+    },
+    {
+      "number": 44,
+      "bbox": [
+        765.0,
+        7104.916015625,
+        1154.0,
+        7493.916015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0000305175781,
+        765.0,
+        7104.916015625
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 154298,
+      "digest": "b'*kJ\\x84\\x93\\xab\\xf3\\xb2/\\xbf\\x1b?\\x95\\x15\\xbf\\xc4'",
+      "has-mask": true,
+      "xref": 376
+    },
+    {
+      "number": 45,
+      "bbox": [
+        1147.6494140625,
+        7100.0576171875,
+        1585.744384765625,
+        7536.65087890625
+      ],
+      "transform": [
+        438.09503173828125,
+        0.0,
+        -0.0,
+        436.5934143066406,
+        1147.6494140625,
+        7100.0576171875
+      ],
+      "width": 414,
+      "height": 414,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 26230,
+      "digest": "b'\\x17\\\\\\x08\\xa2e\\x06%\\x91\\x1e\\xa18#\\x1eX\\x8e\\x82'",
+      "has-mask": true,
+      "xref": 460
+    },
+    {
+      "number": 46,
+      "bbox": [
+        370.0,
+        7495.916015625,
+        759.0,
+        7884.916015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        370.0,
+        7495.916015625
+      ],
+      "width": 410,
+      "height": 410,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 23973,
+      "digest": "b'\\xad\\x92c& ]\\x90\\xce\\x13[\\xb8\\x1d F\\xc4\\xa2'",
+      "has-mask": true,
+      "xref": 496
+    },
+    {
+      "number": 47,
+      "bbox": [
+        767.0,
+        7497.916015625,
+        1152.0,
+        7882.916015625
+      ],
+      "transform": [
+        385.0000305175781,
+        0.0,
+        -0.0,
+        385.0000305175781,
+        767.0,
+        7497.916015625
+      ],
+      "width": 512,
+      "height": 512,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 11900,
+      "digest": "b')q\\x86\\xe7PH\\xd8\\x10\\xf2W\\x00?}`8['",
+      "has-mask": true,
+      "xref": 480
+    },
+    {
+      "number": 48,
+      "bbox": [
+        1160.0,
+        7495.916015625,
+        1549.0,
+        7884.916015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0,
+        1160.0,
+        7495.916015625
+      ],
+      "width": 410,
+      "height": 410,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 21538,
+      "digest": "b'\\x87>\\x99~o\\x05\\xd0\\xd0\\xf2\\x0b\"\\xed\\xb1f}|'",
+      "has-mask": true,
+      "xref": 372
+    },
+    {
+      "number": 49,
+      "bbox": [
+        370.0,
+        7886.916015625,
+        759.0,
+        8275.916015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0000305175781,
+        370.0,
+        7886.916015625
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 182532,
+      "digest": "b'\\xb1\\x05\\xa6U\\xce\\xae\\xeb\\xb2\\x9d\\xea\\x18%\\xd5\\xe5\\xf5\\x00'",
+      "has-mask": true,
+      "xref": 516
+    },
+    {
+      "number": 50,
+      "bbox": [
+        765.0,
+        7886.916015625,
+        1154.0,
+        8275.916015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0000305175781,
+        765.0,
+        7886.916015625
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 204919,
+      "digest": "b'\\x06\"\\xd7\\x15:$$DZ4O\\x85Q\\xd3@;'",
+      "has-mask": true,
+      "xref": 368
+    },
+    {
+      "number": 51,
+      "bbox": [
+        1160.0,
+        7886.916015625,
+        1549.0,
+        8275.916015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0000305175781,
+        1160.0,
+        7886.916015625
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 215204,
+      "digest": "b'1\\xf4\\xc3\\xa1\\xf8\\x11y\\x1e\\xb9\\xa7\\xb4.\\x15\\x1f\\xea\\xff'",
+      "has-mask": true,
+      "xref": 364
+    },
+    {
+      "number": 52,
+      "bbox": [
+        370.0,
+        8562.916015625,
+        759.0,
+        8951.916015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0000305175781,
+        370.0,
+        8562.916015625
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 229587,
+      "digest": "b'J|\\x02p\\xe6\\xe0/\\xb0h\\xc0\\x1cG_\\xba\\xd6\\xcf'",
+      "has-mask": true,
+      "xref": 380
+    },
+    {
+      "number": 53,
+      "bbox": [
+        765.0,
+        8562.916015625,
+        1154.0,
+        8951.916015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0000305175781,
+        765.0,
+        8562.916015625
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 279135,
+      "digest": "b'i\\x97\\xab\\x99\\x83\\xab\\xd5\\xa01\\xf4a|]\\x95\\xbc\\xbe'",
+      "has-mask": true,
+      "xref": 360
+    },
+    {
+      "number": 54,
+      "bbox": [
+        1160.0,
+        8562.916015625,
+        1549.0,
+        8951.916015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0000305175781,
+        1160.0,
+        8562.916015625
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 192468,
+      "digest": "b'\\xd6\\xafqW\\xbb\\x13\\x94y\\xf8\\xc6@\\xfa\\x84\\xd9c\\x86'",
+      "has-mask": true,
+      "xref": 356
+    },
+    {
+      "number": 55,
+      "bbox": [
+        370.0,
+        8953.916015625,
+        759.0,
+        9342.916015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0000305175781,
+        370.0,
+        8953.916015625
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 204917,
+      "digest": "b'\\xfb`\\t\\xb86#>\\xca\\xe4\\xdd\\xf4_\\xefvF\\xe1'",
+      "has-mask": true,
+      "xref": 396
+    },
+    {
+      "number": 56,
+      "bbox": [
+        765.0,
+        8941.7255859375,
+        1154.0,
+        9355.10546875
+      ],
+      "transform": [
+        389.0000305175781,
+        0.0,
+        -0.0,
+        413.3794860839844,
+        765.0,
+        8941.7255859375
+      ],
+      "width": 1452,
+      "height": 1543,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 124829,
+      "digest": "b'N4\\xe6\\xfap\\x157\\xb7a8\\x99\\xd1\\xe6\\xf2\\xf3>'",
+      "has-mask": true,
+      "xref": 560
+    },
+    {
+      "number": 57,
+      "bbox": [
+        1160.0,
+        8953.916015625,
+        1549.0,
+        9342.916015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0000305175781,
+        1160.0,
+        8953.916015625
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 201919,
+      "digest": "b'u\\xb7\\xc1\\x9a\\xd5\\x0f\\x0b\\xeb\\xfbCZP\\xe1i\\xd9\\x11'",
+      "has-mask": true,
+      "xref": 352
+    },
+    {
+      "number": 58,
+      "bbox": [
+        370.0,
+        9344.916015625,
+        759.0,
+        9733.916015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0000305175781,
+        370.0,
+        9344.916015625
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 311081,
+      "digest": "b\"\\xad\\xc2\\xfd\\xafV\\x83\\xdd\\x98'\\xa6\\x82F[$ \\xa8\"",
+      "has-mask": true,
+      "xref": 348
+    },
+    {
+      "number": 59,
+      "bbox": [
+        765.0,
+        9344.916015625,
+        1154.0,
+        9733.916015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0000305175781,
+        765.0,
+        9344.916015625
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 306966,
+      "digest": "b'P\\xc6\\xd8\\xe4\\x91+\\x93\\xf3\\x042\\xc9&\\xf0\\xf3\"4'",
+      "has-mask": true,
+      "xref": 344
+    },
+    {
+      "number": 60,
+      "bbox": [
+        1160.0,
+        9344.916015625,
+        1549.0,
+        9733.916015625
+      ],
+      "transform": [
+        389.0,
+        0.0,
+        -0.0,
+        389.0000305175781,
+        1160.0,
+        9344.916015625
+      ],
+      "width": 1254,
+      "height": 1254,
+      "colorspace": 3,
+      "cs-name": "ICCBased(RGB,sRGB2014)",
+      "xres": 96,
+      "yres": 96,
+      "bpc": 8,
+      "size": 297009,
+      "digest": "b'k\\x19\\xd2\\x86v6?\\xb8X\\xce\\xf6>\\x94{\\x0e\\x1b'",
+      "has-mask": true,
+      "xref": 340
+    }
+  ],
+  "text": {
+    "width": 1920.0,
+    "height": 10081.0,
+    "blocks": [
+      {
+        "type": 0,
+        "number": 0,
+        "flags": 0,
+        "bbox": [
+          559.0,
+          130.0,
+          595.3434448242188,
+          149.453125
+        ],
+        "lines": [
+          {
+            "spans": [
+              {
+                "size": 16.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "Back",
+                "origin": [
+                  559.0,
+                  146.0
+                ],
+                "bbox": [
+                  559.0,
+                  130.0,
+                  595.3434448242188,
+                  149.453125
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              559.0,
+              130.0,
+              595.3434448242188,
+              149.453125
+            ]
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "number": 1,
+        "flags": 0,
+        "bbox": [
+          571.0,
+          193.0,
+          768.736572265625,
+          222.1796875
+        ],
+        "lines": [
+          {
+            "spans": [
+              {
+                "size": 24.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "Digital & Branding",
+                "origin": [
+                  571.0,
+                  217.0
+                ],
+                "bbox": [
+                  571.0,
+                  193.0,
+                  768.736572265625,
+                  222.1796875
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              571.0,
+              193.0,
+              768.736572265625,
+              222.1796875
+            ]
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "number": 2,
+        "flags": 0,
+        "bbox": [
+          528.0,
+          263.0,
+          1381.6044921875,
+          425.7119140625
+        ],
+        "lines": [
+          {
+            "spans": [
+              {
+                "size": 45.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "Selected work across digital campaigns, ",
+                "origin": [
+                  528.0,
+                  308.0
+                ],
+                "bbox": [
+                  528.0,
+                  263.0,
+                  1381.6044921875,
+                  317.7119140625
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              528.0,
+              263.0,
+              1381.6044921875,
+              317.7119140625
+            ]
+          },
+          {
+            "spans": [
+              {
+                "size": 45.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "print ad, brand identity, and visual ",
+                "origin": [
+                  528.0,
+                  362.0
+                ],
+                "bbox": [
+                  528.0,
+                  317.0,
+                  1248.49462890625,
+                  371.7119140625
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              528.0,
+              317.0,
+              1248.49462890625,
+              371.7119140625
+            ]
+          },
+          {
+            "spans": [
+              {
+                "size": 45.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "mockups ",
+                "origin": [
+                  528.0,
+                  416.0
+                ],
+                "bbox": [
+                  528.0,
+                  371.0,
+                  730.2728881835938,
+                  425.7119140625
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              528.0,
+              371.0,
+              730.2728881835938,
+              425.7119140625
+            ]
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "number": 3,
+        "flags": 0,
+        "bbox": [
+          529.5,
+          1139.0,
+          1010.61376953125,
+          1180.884765625
+        ],
+        "lines": [
+          {
+            "spans": [
+              {
+                "size": 24.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "Logo Space",
+                "origin": [
+                  529.5,
+                  1163.0
+                ],
+                "bbox": [
+                  529.5,
+                  1139.0,
+                  661.0657348632812,
+                  1168.1796875
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              529.5,
+              1139.0,
+              661.0657348632812,
+              1168.1796875
+            ]
+          },
+          {
+            "spans": [
+              {
+                "size": 18.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "Scroll Down",
+                "origin": [
+                  909.2941284179688,
+                  1177.0
+                ],
+                "bbox": [
+                  909.2941284179688,
+                  1159.0,
+                  1010.61376953125,
+                  1180.884765625
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              909.2941284179688,
+              1159.0,
+              1010.61376953125,
+              1180.884765625
+            ]
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "number": 4,
+        "flags": 0,
+        "bbox": [
+          529.5,
+          1207.0,
+          1384.740234375,
+          1274.453125
+        ],
+        "lines": [
+          {
+            "spans": [
+              {
+                "size": 16.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": " collection of brand identities created for companies across technology, consumer, finance, lifestyle, and emerging ",
+                "origin": [
+                  529.5,
+                  1223.0
+                ],
+                "bbox": [
+                  529.5,
+                  1207.0,
+                  1365.6292724609375,
+                  1226.453125
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              529.5,
+              1207.0,
+              1365.6292724609375,
+              1226.453125
+            ]
+          },
+          {
+            "spans": [
+              {
+                "size": 16.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "industries. Each identity is designed to establish a distinctive visual language that remains recognizable across digital ",
+                "origin": [
+                  529.5,
+                  1247.0
+                ],
+                "bbox": [
+                  529.5,
+                  1231.0,
+                  1384.740234375,
+                  1250.453125
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              529.5,
+              1231.0,
+              1384.740234375,
+              1250.453125
+            ]
+          },
+          {
+            "spans": [
+              {
+                "size": 16.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "and physical touchpoint.",
+                "origin": [
+                  529.5,
+                  1271.0
+                ],
+                "bbox": [
+                  529.5,
+                  1255.0,
+                  707.0933837890625,
+                  1274.453125
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              529.5,
+              1255.0,
+              707.0933837890625,
+              1274.453125
+            ]
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "number": 5,
+        "flags": 0,
+        "bbox": [
+          528.5,
+          3004.0,
+          670.1485595703125,
+          3033.1796875
+        ],
+        "lines": [
+          {
+            "spans": [
+              {
+                "size": 24.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "Brand Space",
+                "origin": [
+                  528.5,
+                  3028.0
+                ],
+                "bbox": [
+                  528.5,
+                  3004.0,
+                  670.1485595703125,
+                  3033.1796875
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              528.5,
+              3004.0,
+              670.1485595703125,
+              3033.1796875
+            ]
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "number": 6,
+        "flags": 0,
+        "bbox": [
+          528.5,
+          3072.0,
+          1353.2586669921875,
+          3139.453125
+        ],
+        "lines": [
+          {
+            "spans": [
+              {
+                "size": 16.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "A curated selection of identities, campaigns, advertisements, and digital experiences developed across multiple ",
+                "origin": [
+                  528.5,
+                  3088.0
+                ],
+                "bbox": [
+                  528.5,
+                  3072.0,
+                  1343.746337890625,
+                  3091.453125
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              528.5,
+              3072.0,
+              1343.746337890625,
+              3091.453125
+            ]
+          },
+          {
+            "spans": [
+              {
+                "size": 16.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "industries and formats. The work combines compelling visual systems with clear messaging to turn attention into ",
+                "origin": [
+                  528.5,
+                  3112.0
+                ],
+                "bbox": [
+                  528.5,
+                  3096.0,
+                  1353.2586669921875,
+                  3115.453125
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              528.5,
+              3096.0,
+              1353.2586669921875,
+              3115.453125
+            ]
+          },
+          {
+            "spans": [
+              {
+                "size": 16.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "meaningful engagement.",
+                "origin": [
+                  528.5,
+                  3136.0
+                ],
+                "bbox": [
+                  528.5,
+                  3120.0,
+                  709.2680053710938,
+                  3139.453125
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              528.5,
+              3120.0,
+              709.2680053710938,
+              3139.453125
+            ]
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "number": 7,
+        "flags": 0,
+        "bbox": [
+          528.5,
+          8362.916015625,
+          656.3223266601562,
+          8392.095703125
+        ],
+        "lines": [
+          {
+            "spans": [
+              {
+                "size": 24.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "Print Space",
+                "origin": [
+                  528.5,
+                  8386.916015625
+                ],
+                "bbox": [
+                  528.5,
+                  8362.916015625,
+                  656.3223266601562,
+                  8392.095703125
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              528.5,
+              8362.916015625,
+              656.3223266601562,
+              8392.095703125
+            ]
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "number": 8,
+        "flags": 0,
+        "bbox": [
+          528.5,
+          8430.916015625,
+          1387.498291015625,
+          8498.369140625
+        ],
+        "lines": [
+          {
+            "spans": [
+              {
+                "size": 16.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "Print campaigns designed to command attention in high-impact environments. From newspaper advertisements and ",
+                "origin": [
+                  528.5,
+                  8446.916015625
+                ],
+                "bbox": [
+                  528.5,
+                  8430.916015625,
+                  1378.4869384765625,
+                  8450.369140625
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              528.5,
+              8430.916015625,
+              1378.4869384765625,
+              8450.369140625
+            ]
+          },
+          {
+            "spans": [
+              {
+                "size": 16.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "editorial placements to promotional materials, each execution balances strong messaging, visual hierarchy, and brand ",
+                "origin": [
+                  528.5,
+                  8470.916015625
+                ],
+                "bbox": [
+                  528.5,
+                  8454.916015625,
+                  1387.498291015625,
+                  8474.369140625
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              528.5,
+              8454.916015625,
+              1387.498291015625,
+              8474.369140625
+            ]
+          },
+          {
+            "spans": [
+              {
+                "size": 16.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "recognition.",
+                "origin": [
+                  528.5,
+                  8494.916015625
+                ],
+                "bbox": [
+                  528.5,
+                  8478.916015625,
+                  614.202392578125,
+                  8498.369140625
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              528.5,
+              8478.916015625,
+              614.202392578125,
+              8498.369140625
+            ]
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "number": 9,
+        "flags": 0,
+        "bbox": [
+          371.0,
+          9822.0,
+          483.0325622558594,
+          9843.884765625
+        ],
+        "lines": [
+          {
+            "spans": [
+              {
+                "size": 18.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "Explore more",
+                "origin": [
+                  371.0,
+                  9840.0
+                ],
+                "bbox": [
+                  371.0,
+                  9822.0,
+                  483.0325622558594,
+                  9843.884765625
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              371.0,
+              9822.0,
+              483.0325622558594,
+              9843.884765625
+            ]
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "number": 10,
+        "flags": 0,
+        "bbox": [
+          400.0,
+          9930.0,
+          498.3558654785156,
+          9949.453125
+        ],
+        "lines": [
+          {
+            "spans": [
+              {
+                "size": 16.0,
+                "flags": 0,
+                "bidi": 0,
+                "char_flags": 16,
+                "font": "Type3 (330 0 R)",
+                "color": 0,
+                "alpha": 255,
+                "ascender": 0.800000011920929,
+                "descender": -0.20000000298023224,
+                "text": "Back to Work",
+                "origin": [
+                  400.0,
+                  9946.0
+                ],
+                "bbox": [
+                  400.0,
+                  9930.0,
+                  498.3558654785156,
+                  9949.453125
+                ]
+              }
+            ],
+            "wmode": 0,
+            "dir": [
+              1.0,
+              0.0
+            ],
+            "bbox": [
+              400.0,
+              9930.0,
+              498.3558654785156,
+              9949.453125
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
