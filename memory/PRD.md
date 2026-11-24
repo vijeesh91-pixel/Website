@@ -271,3 +271,7 @@ Waited for batch uploads until user said “All uploaded. \"Explore more\" will 
 - Case-study footers (Previous/Next) stack vertically on mobile, separators hidden; hover preview card capped to viewport width.
 - Audited all pages at 390px: no horizontal overflow.
 - FloatingNav (`current` prop) also shows Previous/Next project chevron buttons once reading progress passes 90% (separated by a thin divider above Back/Top).
+
+## 2026-06 — Sidebar redesign + landing scroll removed
+- Sidebar: "Home" removed (logo still links home); "Patent" label → "Patents". Active item = blue (#0765ec) semibold with a 6px blue rounded bar flush to the sidebar's left edge (mobile: blue underline).
+- Landing page no longer navigates to Work on wheel/swipe (`useLandingScroll` unused); only the Portfolio buttons/links open Work.

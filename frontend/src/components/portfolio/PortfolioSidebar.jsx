@@ -8,9 +8,7 @@ export const PortfolioSidebar = ({ onWork, active = 'work' }) => (
       <img src={portfolioLogo} alt={site.name} width="594" height="249" fetchPriority="high" draggable="false" data-testid="portfolio-logo" />
     </Link>
     <nav className="work-navigation" aria-label="Portfolio sections" data-testid="portfolio-navigation">
-      <Link to="/" className="work-nav-item" data-testid="nav-home"><span className="nav-marker" aria-hidden="true" /><span>Home</span></Link>
-      {['Work', 'Writing', 'Patent', 'Profile', 'Contact'].map(label => {
-        const id = label.toLowerCase();
+      {[['work', 'Work'], ['writing', 'Writing'], ['patent', 'Patents'], ['profile', 'Profile'], ['contact', 'Contact']].map(([id, label]) => {
         const className = `work-nav-item ${active === id ? 'is-active' : ''}`;
         const contents = <><span className="nav-marker" aria-hidden="true" /><span>{label}</span></>;
         return id === 'work' && active === 'work'

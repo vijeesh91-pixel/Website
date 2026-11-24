@@ -6,11 +6,9 @@ import { Button } from '../components/ui/button';
 import { NameArtwork } from '../components/NameArtwork';
 import { ResumeDownload } from '../components/ResumeDownload';
 import { site, revealEase } from '../content/site';
-import { useLandingScroll } from '../hooks/useLandingScroll';
 
 export const Landing = () => {
   const landingRef = useRef(null);
-  useLandingScroll(landingRef, false);
   const reduced = useReducedMotion();
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);

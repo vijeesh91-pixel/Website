@@ -14,12 +14,14 @@
 .work-logo { display: block; position: absolute; top: clamp(38px, 5.17svh, 65px); left: 25.4%; width: 53%; max-width: 157px; transition: opacity .25s ease; }
 .work-logo:hover { opacity: .72; }
 .work-logo img { width: 100%; height: auto; }
-.work-navigation { position: absolute; top: 35.6svh; left: 0; width: 100%; padding-left: 28.8%; }
+.work-navigation { --nav-inset: calc(var(--sidebar-width) * .288); position: absolute; top: 35.6svh; left: 0; width: 100%; padding-left: var(--nav-inset); }
 .work-nav-item { position: relative; display: flex; align-items: center; gap: 12px; width: fit-content; min-width: 110px; min-height: 55px; padding-right: 12px; text-decoration: none; font-size: 16px; line-height: 24px; font-weight: 400; color: #666; background: none; border: 0; text-align: left; transition: color .2s ease; }
 .work-nav-item:not(.is-upcoming):hover { color: #101010; }
-.work-nav-item.is-active { color: #101010; font-weight: 600; }
-.nav-marker { display: block; width: 18px; height: 32px; flex-shrink: 0; background: transparent; }
-.is-active .nav-marker { background: linear-gradient(100deg, #f4d96d, #edc952); border: 1px solid #eac867; box-shadow: inset -2px 0 0 #ffffff35; }
+.work-nav-item.is-active { color: #0765ec; font-weight: 600; }
+.nav-marker { position: absolute; top: 50%; left: calc(-1 * var(--nav-inset)); width: 6px; height: 32px; margin-top: -16px; border-radius: 0 4px 4px 0; background: #0765ec; transform: scaleX(0); transform-origin: left center; transition: transform .25s ease; }
+.is-active .nav-marker { transform: scaleX(1); }
+@keyframes navMarkerIn { from { transform: scaleX(0); } }
+.is-active .nav-marker { animation: navMarkerIn .35s ease; }
 .is-upcoming { cursor: default; }
 .work-content { margin-left: var(--sidebar-width); padding: clamp(100px, 16.3svh, 220px) 0 90px var(--content-inset); min-width: 0; }
 .work-intro { padding-right: var(--content-inset); }
@@ -63,7 +65,7 @@
 @media (min-width: 768px) and (max-width: 1100px) {
   .work-shell { --sidebar-width: 184px; --content-inset: 35px; --tile-width: min(460px, calc(100vw - 255px)); --tile-gap: 30px; }
   .work-logo { left: 22%; width: 62%; }
-  .work-navigation { padding-left: 20%; }
+  .work-navigation { --nav-inset: calc(var(--sidebar-width) * .2); }
   .work-intro p { max-width: 490px; font-size: var(--fs-lead); line-height: 1.45; }
 }
 @media (max-width: 767px) {
@@ -73,7 +75,7 @@
   .work-navigation { position: relative; top: auto; display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 24px 0 0; width: 100%; }
   .work-nav-item { min-width: 0; min-height: 49px; padding: 0 1px 6px; font-size: 13px; line-height: 20px; gap: 0; }
   .nav-marker { display: none; }
-  .is-active::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 3px; background: #edcc5d; }
+  .is-active::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 3px; background: #0765ec; }
   .work-content { padding-top: 44px; padding-bottom: 64px; }
   .work-intro h1 { font-weight: 500; font-size: var(--fs-display); }
   .work-intro p { font-size: var(--fs-lead); line-height: 1.55; margin-top: 15px; max-width: 510px; letter-spacing: -.01em; }
