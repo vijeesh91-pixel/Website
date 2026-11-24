@@ -243,3 +243,6 @@ Waited for batch uploads until user said “All uploaded. \"Explore more\" will 
 - `ZoomableImage` (`components/case-study/ImageLightbox.jsx`, prop `testId`) now used on Vox (hero, sections, flow, wireframes, prototypes), Poonch (all images incl. branding stack), Digital & Branding (cover + all gallery cells) and Oddup. Vox prototype backdrop stays decorative.
 - `components/case-study/NextProject.jsx`: footer link following Work order Vox → Poonch → Oddup → Digital & Branding → Vox (loops). Oddup footer now points to Digital & Branding (was Vox per PDF).
 - Verified via screenshot: zoom counts per page (23/11/27/58), next links correct, dialog opens.
+
+## 2026-06 — Next Project hover preview
+- `NextProject.jsx` now reads order/images from `content/projects.js` and shows a hover/focus card (Work tile image, category, title) above the link on all 4 case studies. Hidden on touch devices (user choice). Styles in `App.css` (`.next-preview`).
