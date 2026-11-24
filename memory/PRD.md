@@ -233,3 +233,8 @@ Waited for batch uploads until user said “All uploaded. \"Explore more\" will 
 - Videos are muted, loop, and play only while visible (IntersectionObserver).
 - Footer: Back | Next Project: Vox Case Study.
 - Verified with a smoke screenshot (no horizontal overflow, both videos playing).
+
+## 2026-06 — Image Zoom + Reading Progress
+- `components/case-study/ImageLightbox.jsx` (`ZoomableImage`): every Oddup design-system image opens full screen at full resolution (click/tap, Esc, close button, or tap image to close). Videos excluded.
+- `components/ReadingProgress.jsx`: thin blue scroll-progress bar fixed at top on every page except the landing page (mounted in `App.js`). Styles in `App.css`.
+- Verified via screenshot: lightbox opens/closes; progress bar tracks scroll on Oddup and Vox.

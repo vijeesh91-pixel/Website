@@ -12,6 +12,7 @@ import PoonchCaseStudy from './pages/PoonchCaseStudy';
 import VoxCaseStudy from './pages/VoxCaseStudy';
 import OddupCaseStudy from './pages/OddupCaseStudy';
 import DigitalBranding from './pages/DigitalBranding';
+import { ReadingProgress } from './components/ReadingProgress';
 import './App.css';
 
 function SiteRoutes() {
@@ -30,7 +31,8 @@ function SiteRoutes() {
     return () => lenis.destroy();
   }, [reducedMotion]);
 
-  return (
+  return (<>
+    {pathname !== '/' && <ReadingProgress key={pathname} />}
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/portfolio" element={<Portfolio />} />
@@ -44,7 +46,7 @@ function SiteRoutes() {
       <Route path="/portfolio/print" element={<DigitalBranding />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
-  );
+  </>);
 }
 
 export default function App() {

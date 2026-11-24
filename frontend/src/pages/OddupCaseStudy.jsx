@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { oddupMedia as m, oddupCopy as copy, oddupFacts, oddupFoundations, oddupIcon } from '../content/oddup';
 import { revealEase } from '../content/site';
+import { ZoomableImage } from '../components/case-study/ImageLightbox';
 import './PoonchCaseStudy.css';
 import './OddupCaseStudy.css';
 
@@ -23,7 +24,7 @@ const Section = ({ id, title, paragraphs, minor = false, children }) => {
 };
 
 const Media = ({ image, id, className = '' }) => <figure className={`oddup-media ${className}`} data-testid={`oddup-figure-${id}`}>
-  <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" decoding="async" data-testid={`oddup-image-${id}`} />
+  <ZoomableImage image={image} id={id} />
 </figure>;
 
 const ViewVideo = ({ video, id, className = '' }) => {

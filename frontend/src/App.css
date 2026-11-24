@@ -75,4 +75,17 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--sun); outline-o
 }
 @media (max-width: 359px) { .hero-content { padding-left: 16px; padding-right: 16px; } .hero-button { min-width: 100px; padding: 0 20px; } .contact-button { min-width: 48px; padding: 0; } .specialties { font-size: 11px; } }
 @media (max-height: 599px) and (min-width: 768px) { .landing { min-height: 460px; } .hero-content { padding-top: 45px; } .name-artwork { width: min(38vw, 330px); } .specialties { margin-top: 18px; } .hero-actions { margin-top: 20px; } }
-@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }.reading-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: #1265da; transform-origin: 0 50%; z-index: 60; pointer-events: none; }
+.zoom-trigger { position: relative; display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; border-radius: 10px; }
+.zoom-trigger:focus-visible { outline: 3px solid #1265da; outline-offset: 3px; }
+.zoom-hint { position: absolute; top: 12px; right: 12px; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: rgba(255,255,255,.88); color: #242424; box-shadow: 0 2px 8px rgba(0,0,0,.12); opacity: 0; transform: scale(.9); transition: opacity .2s ease, transform .2s ease; }
+.zoom-trigger:hover .zoom-hint, .zoom-trigger:focus-visible .zoom-hint { opacity: 1; transform: scale(1); }
+.zoom-overlay { position: fixed; inset: 0; z-index: 80; background: rgba(10,12,16,.9); backdrop-filter: blur(14px); animation: zoomFade .2s ease; }
+.zoom-content { position: fixed; inset: 0; z-index: 81; display: grid; place-items: center; padding: 4vh 3vw; outline: none; animation: zoomIn .25s ease; }
+.zoom-full { max-width: 100%; max-height: 92vh; width: auto; height: auto; object-fit: contain; border-radius: 8px; cursor: zoom-out; }
+.zoom-close { position: fixed; top: 18px; right: 18px; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; border: 0; background: rgba(255,255,255,.14); color: #fff; cursor: pointer; transition: background-color .2s ease; }
+.zoom-close:hover { background: rgba(255,255,255,.26); }
+@keyframes zoomFade { from { opacity: 0; } }
+@keyframes zoomIn { from { opacity: 0; transform: scale(.97); } }
+@media (prefers-reduced-motion: reduce) { .zoom-overlay, .zoom-content { animation: none; } }
+@media (hover: none) { .zoom-hint { opacity: 1; transform: none; } }
