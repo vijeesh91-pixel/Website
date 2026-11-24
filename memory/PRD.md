@@ -253,3 +253,6 @@ Waited for batch uploads until user said “All uploaded. \"Explore more\" will 
 ## 2026-06 — Tiles, order, favicon
 - Work order now Vox → Oddup → Poonch → Digital & Branding (`content/projects.js`); Next/Previous links follow it automatically.
 - New tile images: Vox_CS1, Oddup_CS1, Print_CS1 (Poonch unchanged). Favicon replaced with FAV.webp (`public/favicon.webp`).
+
+## 2026-06 — Work tile copy
+- Tile titles/descriptions rewritten from each case study title + At-A-Glance (Oddup subtitle removed). Titles and descriptions clamped to 2 lines (`Portfolio.css`); preview-card titles also clamped.

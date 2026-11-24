@@ -95,4 +95,4 @@
   .work-intro h1 { font-size: 56px; }
   .project-caption { gap: 7px; }
   .project-caption h2 { font-size: 15px; }
-}
+}.project-caption h2, .project-description { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }

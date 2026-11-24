@@ -104,3 +104,4 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--sun); outline-o
 @media (hover: none) { .next-preview { display: none; } }
 @media (prefers-reduced-motion: reduce) { .next-preview { transition: opacity .15s ease; transform: none; } }
 .prev-project-link:hover svg { transform: translateX(-3px); }
+.next-preview-meta strong { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; line-height: 1.35; }
