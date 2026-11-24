@@ -105,6 +105,6 @@ export default function OddupCaseStudy() {
     <footer className="case-footer case-column oddup-footer">
       <ProjectNav current="oddup" />
     </footer>
-    <FloatingNav />
+    <FloatingNav current="oddup" />
   </main>;
 }

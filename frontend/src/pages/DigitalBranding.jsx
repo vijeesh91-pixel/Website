@@ -47,6 +47,6 @@ export default function DigitalBranding() {
         <ProjectNav current="print" className="branding-back" />
       </div>
     </footer>
-    <FloatingNav />
+    <FloatingNav current="print" />
   </main>;
 }

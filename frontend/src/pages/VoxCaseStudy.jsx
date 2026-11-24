@@ -52,6 +52,6 @@ export default function VoxCaseStudy() {
     <CaseStudyText id="vox-prototype" title="Prototype Screens" paragraphs={copy.prototype} major />
     <VoxPrototype />
     <footer className="case-footer case-column case-nav"><ProjectNav current="vox" /></footer>
-    <FloatingNav />
+    <FloatingNav current="vox" />
   </main>;
 }

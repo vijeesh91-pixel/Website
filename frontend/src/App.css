@@ -117,3 +117,4 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--sun); outline-o
   .case-nav > span[aria-hidden='true'], .branding-nav > span[aria-hidden='true'], .oddup-footer > span[aria-hidden='true'] { display: none; }
   .next-project-link { min-height: 32px; }
 }
+.floating-group { display: flex; flex-direction: column; gap: 12px; padding-bottom: 12px; margin-bottom: 0; border-bottom: 1px solid #e6e6e6; }

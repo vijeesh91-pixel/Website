@@ -270,3 +270,4 @@ Waited for batch uploads until user said “All uploaded. \"Explore more\" will 
 - Vox tables (heuristics, comparison, priorities) on ≤767px: row-header cells were constrained by desktop column widths (15%/33%) → now span the full card (`.vox-table.vox-table tbody tr > th`).
 - Case-study footers (Previous/Next) stack vertically on mobile, separators hidden; hover preview card capped to viewport width.
 - Audited all pages at 390px: no horizontal overflow.
+- FloatingNav (`current` prop) also shows Previous/Next project chevron buttons once reading progress passes 90% (separated by a thin divider above Back/Top).

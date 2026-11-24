@@ -47,6 +47,6 @@ export default function PoonchCaseStudy() {
     </div>
     <CaseStudyText id="outcome" title="Final Outcome" paragraphs={copy.outcome} major />
     <footer className="case-footer case-column case-nav"><ProjectNav current="poonch" /></footer>
-    <FloatingNav />
+    <FloatingNav current="poonch" />
   </main>;
 }
