@@ -249,3 +249,7 @@ Waited for batch uploads until user said “All uploaded. \"Explore more\" will 
 
 ## 2026-06 — Previous Project link
 - `NextProject` takes `direction="prev"`; `ProjectNav` renders "| ← Previous Project | Next Project →" (both with hover preview) in all 4 case-study footers. Order loops: Vox ↔ Poonch ↔ Oddup ↔ Digital & Branding.
+
+## 2026-06 — Tiles, order, favicon
+- Work order now Vox → Oddup → Poonch → Digital & Branding (`content/projects.js`); Next/Previous links follow it automatically.
+- New tile images: Vox_CS1, Oddup_CS1, Print_CS1 (Poonch unchanged). Favicon replaced with FAV.webp (`public/favicon.webp`).
