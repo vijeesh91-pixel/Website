@@ -29,7 +29,7 @@
 .oddup-foundations span { font-size: 36px; line-height: 1.2; color: var(--oddup-blue); }
 .oddup-foundations strong { font-size: 22px; line-height: 1.3; font-weight: 600; color: #242424; }
 .oddup-footer { display: flex; align-items: center; gap: 12px; color: #757575; font-size: 12px; }
-.oddup-next:hover { transform: translateX(3px); }
+
 @media (max-width: 767px) {
   .oddup-page { --oddup-gap: 14px; }
   .oddup-page .case-major { margin-top: 52px; }

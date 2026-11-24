@@ -1,5 +1,6 @@
 import { motion, useReducedMotion } from 'framer-motion';
 import { revealEase } from '../../content/site';
+import { ZoomableImage } from './ImageLightbox';
 
 export const CaseStudyText = ({ id, title, paragraphs, major = false, children }) => {
   const reduced = useReducedMotion();
@@ -14,6 +15,6 @@ export const CaseStudyText = ({ id, title, paragraphs, major = false, children }
 
 export const CaseStudyImage = ({ image, id, hero = false }) => (
   <figure className={`case-image ${hero ? 'case-hero-image' : ''}`} data-testid={`case-figure-${id}`}>
-    <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading={hero ? 'eager' : 'lazy'} fetchPriority={hero ? 'high' : undefined} decoding="async" data-testid={`case-image-${id}`} />
+    <ZoomableImage image={image} testId={`case-image-${id}`} hero={hero} />
   </figure>
 );

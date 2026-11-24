@@ -1,7 +1,8 @@
 import { voxImages, voxPrototype, voxWireframes } from '../../content/vox';
+import { ZoomableImage } from './ImageLightbox';
 
 export const VoxWireframes = () => <div className="vox-wide vox-wireframes" data-testid="vox-wireframe-gallery">
-  {voxWireframes.map(screen => <img key={screen.id} src={screen.src} alt={`VOX ${screen.title} wireframe`} width={screen.width} height={screen.height} loading="lazy" decoding="async" data-testid={`vox-wireframe-${screen.id}`} />)}
+  {voxWireframes.map(screen => <ZoomableImage key={screen.id} image={{ ...screen, alt: `VOX ${screen.title} wireframe` }} testId={`vox-wireframe-${screen.id}`} />)}
 </div>;
 
 export const VoxPrototype = () => <div className="vox-wide vox-prototype-stage" data-testid="vox-prototype-stage">
@@ -12,7 +13,7 @@ export const VoxPrototype = () => <div className="vox-wide vox-prototype-stage" 
         <span className="vox-screen-number" data-testid={`vox-prototype-number-${screen.id}`}>{index + 1}</span>
         <div><h3 data-testid={`vox-prototype-title-${screen.id}`}>{screen.title}</h3><p data-testid={`vox-prototype-caption-${screen.id}`}>{screen.description}</p></div>
       </figcaption>
-      <img src={screen.src} alt={`VOX ${screen.title} design`} width={screen.width} height={screen.height} loading="lazy" decoding="async" data-testid={`vox-prototype-${screen.id}`} />
+      <ZoomableImage image={{ ...screen, alt: `VOX ${screen.title} design` }} testId={`vox-prototype-${screen.id}`} />
     </figure>)}
   </div>
 </div>;

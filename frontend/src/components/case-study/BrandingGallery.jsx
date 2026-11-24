@@ -1,9 +1,10 @@
+import { ZoomableImage } from './ImageLightbox';
+
 export const BrandingGallery = ({ gallery }) => (
   <div className={`branding-grid branding-wide branding-grid-${gallery.id}`} role="group" aria-label={gallery.label} data-testid={`branding-gallery-${gallery.id}`}>
     {gallery.images.map(image => (
       <figure className="branding-cell" key={image.id} data-testid={`branding-cell-${image.id}`}>
-        <img src={image.src} alt={image.alt} width={image.width} height={image.height}
-          loading="lazy" decoding="async" data-testid={`branding-image-${image.id}`} />
+        <ZoomableImage image={image} testId={`branding-image-${image.id}`} className="zoom-fill" />
       </figure>
     ))}
   </div>

@@ -89,3 +89,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--sun); outline-o
 @keyframes zoomIn { from { opacity: 0; transform: scale(.97); } }
 @media (prefers-reduced-motion: reduce) { .zoom-overlay, .zoom-content { animation: none; } }
 @media (hover: none) { .zoom-hint { opacity: 1; transform: none; } }
+.zoom-fill { height: 100%; border-radius: 0; }
+.case-nav, .branding-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; color: #9a9a9a; }
+.next-project-link svg { transition: transform .2s ease; }
+.next-project-link:hover { transform: none; }
+.next-project-link:hover svg { transform: translateX(3px); }

@@ -6,6 +6,8 @@ import { BrandingSection } from '../components/case-study/BrandingGallery';
 import { brandingAssets, brandingCopy, logoGallery, brandGalleries, printGallery } from '../content/branding';
 import { socialLinks } from '../content/profile';
 import { revealEase } from '../content/site';
+import { ZoomableImage } from '../components/case-study/ImageLightbox';
+import { NextProject } from '../components/case-study/NextProject';
 import './DigitalBranding.css';
 
 export default function DigitalBranding() {
@@ -29,8 +31,7 @@ export default function DigitalBranding() {
     </motion.header>
 
     <figure className="branding-cover branding-wide" data-testid="branding-cover">
-      <img src={brandingAssets.cover} alt="A selection of Oddup digital campaign advertisements"
-        width="1179" height="587" fetchPriority="high" data-testid="branding-cover-image" />
+      <ZoomableImage image={{ src: brandingAssets.cover, alt: 'A selection of Oddup digital campaign advertisements', width: 1179, height: 587 }} testId="branding-cover-image" hero />
     </figure>
 
     <BrandingSection id="logos" title="Logo Space" description={brandingCopy.logos} galleries={[logoGallery]} />
@@ -41,9 +42,13 @@ export default function DigitalBranding() {
       <a className="branding-explore" href={behance.href} target="_blank" rel="noopener noreferrer" data-testid="branding-explore-more">
         Explore more <ArrowUpRight size={20} aria-hidden="true" />
       </a>
-      <Link to="/portfolio" className="branding-back" data-testid="branding-back-bottom">
-        <ArrowLeft size={24} aria-hidden="true" /> Back to Work
-      </Link>
+      <div className="branding-nav">
+        <Link to="/portfolio" className="branding-back" data-testid="branding-back-bottom">
+          <ArrowLeft size={24} aria-hidden="true" /> Back to Work
+        </Link>
+        <span aria-hidden="true">|</span>
+        <NextProject current="print" className="branding-back" />
+      </div>
     </footer>
   </main>;
 }

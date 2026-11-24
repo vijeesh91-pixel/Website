@@ -7,6 +7,8 @@ import { VoxNotes, VoxHeuristics, VoxComparison, VoxPriorities, VoxScope } from 
 import { VoxWireframes, VoxPrototype } from '../components/case-study/VoxScreens';
 import { voxImages as images, voxCopy as copy, voxFlowUrl } from '../content/vox';
 import { revealEase } from '../content/site';
+import { ZoomableImage } from '../components/case-study/ImageLightbox';
+import { NextProject } from '../components/case-study/NextProject';
 import './PoonchCaseStudy.css';
 import './VoxCaseStudy.css';
 
@@ -43,11 +45,11 @@ export default function VoxCaseStudy() {
     <CaseStudyText id="vox-flow" title="User flow" paragraphs={copy.flow} major>
       <p className="vox-flow-link" data-testid="vox-flow-link-label">Detailed User Flow : <a href={voxFlowUrl} target="_blank" rel="noopener noreferrer" data-testid="vox-detailed-flow-link">Click here <ArrowUpRight size={14} aria-hidden="true" /></a></p>
     </CaseStudyText>
-    <a className="case-column vox-flow-image" href={images.flow.src} target="_blank" rel="noopener noreferrer" aria-label="View the complete VOX user flow at full resolution" data-testid="vox-flow-image-link"><img {...images.flow} loading="lazy" decoding="async" data-testid="vox-user-flow-image" /></a>
+    <div className="case-column vox-flow-image" data-testid="vox-flow-image-link"><ZoomableImage image={images.flow} testId="vox-user-flow-image" /></div>
     <CaseStudyText id="vox-wireframe" title="Wireframe" paragraphs={copy.wireframes} major />
     <VoxWireframes />
     <CaseStudyText id="vox-prototype" title="Prototype Screens" paragraphs={copy.prototype} major />
     <VoxPrototype />
-    <footer className="case-footer case-column"><Link to="/portfolio" className="case-back" data-testid="vox-back-bottom"><ArrowLeft size={14} aria-hidden="true" /> Back to Work</Link></footer>
+    <footer className="case-footer case-column case-nav"><Link to="/portfolio" className="case-back" data-testid="vox-back-bottom"><ArrowLeft size={14} aria-hidden="true" /> Back to Work</Link><span aria-hidden="true">|</span><NextProject current="vox" /></footer>
   </main>;
 }

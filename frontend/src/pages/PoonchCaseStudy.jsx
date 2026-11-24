@@ -5,6 +5,8 @@ import { motion, useReducedMotion } from 'framer-motion';
 import { CaseStudyImage, CaseStudyText } from '../components/case-study/CaseStudyBlocks';
 import { poonchImages as images, poonchBranding, poonchCopy as copy } from '../content/poonch';
 import { revealEase } from '../content/site';
+import { ZoomableImage } from '../components/case-study/ImageLightbox';
+import { NextProject } from '../components/case-study/NextProject';
 import './PoonchCaseStudy.css';
 
 export default function PoonchCaseStudy() {
@@ -40,9 +42,9 @@ export default function PoonchCaseStudy() {
     <CaseStudyImage image={images.checkout} id="checkout" />
     <CaseStudyText id="branding" title="Packaging & Brand Experience" paragraphs={copy.branding} major />
     <div className="case-branding-stack case-column" data-testid="poonch-branding-gallery">
-      {poonchBranding.map(image => <img key={image.id} src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" decoding="async" data-testid={`case-branding-${image.id}`} />)}
+      {poonchBranding.map(image => <ZoomableImage key={image.id} image={image} testId={`case-branding-${image.id}`} />)}
     </div>
     <CaseStudyText id="outcome" title="Final Outcome" paragraphs={copy.outcome} major />
-    <footer className="case-footer case-column"><Link to="/portfolio" className="case-back" data-testid="poonch-back-bottom"><ArrowLeft size={14} aria-hidden="true" /> Back to Work</Link></footer>
+    <footer className="case-footer case-column case-nav"><Link to="/portfolio" className="case-back" data-testid="poonch-back-bottom"><ArrowLeft size={14} aria-hidden="true" /> Back to Work</Link><span aria-hidden="true">|</span><NextProject current="poonch" /></footer>
   </main>;
 }

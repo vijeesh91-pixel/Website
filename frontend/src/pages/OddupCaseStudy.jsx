@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
+import { NextProject } from '../components/case-study/NextProject';
 import { motion, useReducedMotion } from 'framer-motion';
 import { oddupMedia as m, oddupCopy as copy, oddupFacts, oddupFoundations, oddupIcon } from '../content/oddup';
 import { revealEase } from '../content/site';
@@ -24,7 +25,7 @@ const Section = ({ id, title, paragraphs, minor = false, children }) => {
 };
 
 const Media = ({ image, id, className = '' }) => <figure className={`oddup-media ${className}`} data-testid={`oddup-figure-${id}`}>
-  <ZoomableImage image={image} id={id} />
+  <ZoomableImage image={image} testId={`oddup-image-${id}`} />
 </figure>;
 
 const ViewVideo = ({ video, id, className = '' }) => {
@@ -60,7 +61,7 @@ export default function OddupCaseStudy() {
       <div className="case-project-label" data-testid="oddup-project-label"><span className="case-project-icon oddup-icon" aria-hidden="true"><img src={oddupIcon} alt="" width="38" height="38" data-testid="oddup-project-icon" /></span><span>Oddup Web App</span></div>
       <h1 ref={heading} tabIndex={-1} data-testid="oddup-case-title">Oddup Design System to Reduce Design Time by <em>40%</em> and <em>2X</em> Faster Product Revamp.</h1>
     </motion.header>
-    <figure className="case-image case-hero-image" data-testid="oddup-figure-hero"><img src={m.hero.src} alt={m.hero.alt} width={m.hero.width} height={m.hero.height} fetchPriority="high" decoding="async" data-testid="oddup-image-hero" /></figure>
+    <figure className="case-image case-hero-image" data-testid="oddup-figure-hero"><ZoomableImage image={m.hero} testId="oddup-image-hero" hero /></figure>
     <Section id="glance" title="At-A-Glance" paragraphs={copy.glance}><Facts /></Section>
     <Section id="challenges" title="Challenges" paragraphs={copy.challenges} />
     <Section id="approach" title="Approach" paragraphs={copy.approach} />
@@ -103,7 +104,7 @@ export default function OddupCaseStudy() {
     <footer className="case-footer case-column oddup-footer">
       <Link to="/portfolio" className="case-back" data-testid="oddup-back-bottom"><ArrowLeft size={14} aria-hidden="true" /> Back</Link>
       <span aria-hidden="true">|</span>
-      <Link to="/portfolio/vox" className="case-back oddup-next" data-testid="oddup-next-project">Next Project: Vox Case Study <ArrowRight size={14} aria-hidden="true" /></Link>
+      <NextProject current="oddup" />
     </footer>
   </main>;
 }

@@ -238,3 +238,8 @@ Waited for batch uploads until user said “All uploaded. \"Explore more\" will 
 - `components/case-study/ImageLightbox.jsx` (`ZoomableImage`): every Oddup design-system image opens full screen at full resolution (click/tap, Esc, close button, or tap image to close). Videos excluded.
 - `components/ReadingProgress.jsx`: thin blue scroll-progress bar fixed at top on every page except the landing page (mounted in `App.js`). Styles in `App.css`.
 - Verified via screenshot: lightbox opens/closes; progress bar tracks scroll on Oddup and Vox.
+
+## 2026-06 — Site-wide Image Zoom + Next Project footers
+- `ZoomableImage` (`components/case-study/ImageLightbox.jsx`, prop `testId`) now used on Vox (hero, sections, flow, wireframes, prototypes), Poonch (all images incl. branding stack), Digital & Branding (cover + all gallery cells) and Oddup. Vox prototype backdrop stays decorative.
+- `components/case-study/NextProject.jsx`: footer link following Work order Vox → Poonch → Oddup → Digital & Branding → Vox (loops). Oddup footer now points to Digital & Branding (was Vox per PDF).
+- Verified via screenshot: zoom counts per page (23/11/27/58), next links correct, dialog opens.
