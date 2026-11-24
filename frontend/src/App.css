@@ -111,3 +111,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--sun); outline-o
 .floating-btn:active { transform: scale(.95); }
 .floating-btn:focus-visible { outline: 2px solid #1265da; outline-offset: 3px; }
 @media (max-width: 767px) { .floating-btn { width: 42px; height: 42px; } }
+.next-preview { max-width: calc(100vw - 48px); }
+@media (max-width: 767px) {
+  .case-nav, .branding-nav, .oddup-footer { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .case-nav > span[aria-hidden='true'], .branding-nav > span[aria-hidden='true'], .oddup-footer > span[aria-hidden='true'] { display: none; }
+  .next-project-link { min-height: 32px; }
+}

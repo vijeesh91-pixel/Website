@@ -265,3 +265,8 @@ Waited for batch uploads until user said “All uploaded. \"Explore more\" will 
 - Resume replaced site-wide: `site.resumeUrl` → `89ff400cae29bacb_Vijeesh_ThattanteValappil.pdf`; download filename `Vijeesh_ThattanteValappil.pdf`.
 - Bottom "Back to Work" links removed from all 4 case studies (footer now: Previous | Next Project).
 - `components/case-study/FloatingNav.jsx`: two round floating buttons (bottom-right; Back to Work grid icon + scroll-to-top arrow), light frosted bg, black thin icons, shown only after 25% scroll progress.
+
+## 2026-06 — Mobile fixes
+- Vox tables (heuristics, comparison, priorities) on ≤767px: row-header cells were constrained by desktop column widths (15%/33%) → now span the full card (`.vox-table.vox-table tbody tr > th`).
+- Case-study footers (Previous/Next) stack vertically on mobile, separators hidden; hover preview card capped to viewport width.
+- Audited all pages at 390px: no horizontal overflow.

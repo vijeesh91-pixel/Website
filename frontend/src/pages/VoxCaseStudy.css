@@ -79,10 +79,10 @@
   .vox-table thead { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
   .vox-table tbody { display: block; }
   .vox-table tbody tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border: 1px solid var(--vox-line); border-radius: 6px; margin-bottom: 14px; overflow: hidden; }
-  .vox-table tbody tr > th { grid-column: 1 / -1; width: auto; padding: 16px; font-weight: 600; background: #f3f8fa; }
+  .vox-table.vox-table tbody tr > th { grid-column: 1 / -1; width: auto; max-width: none; display: block; padding: 16px; font-weight: 600; background: #f3f8fa; }
   .vox-table td { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 6px; text-align: left; font-size: 13px; padding: 14px; border: 0; }
   .vox-table td::before { content: attr(data-label); font-size: 11px; font-weight: 500; color: #747474; }
-  .vox-comparison tbody tr > th { background: #fff2e9; }
+  .vox-table.vox-comparison tbody tr > th { background: #fff2e9; }
   .vox-comparison .vox-support { justify-content: flex-start; }
   .vox-heuristics tbody tr { grid-template-columns: minmax(0, 1fr) 80px; background: #fff; }
   .vox-heuristics td:nth-child(2) { grid-column: 1; grid-row: 2; }
