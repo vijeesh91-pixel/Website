@@ -16,7 +16,7 @@ export default function ProfilePage() {
     <PortfolioSidebar active="profile" />
     <motion.main className="work-content profile-main" initial={reduced ? false : { opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, ease: revealEase }}>
       <div className="profile-container">
-        <h1 ref={heading} tabIndex={-1} className="profile-greeting" data-testid="profile-heading">Hi, I’m Vijeesh,</h1>
+        <h1 ref={heading} tabIndex={-1} className="profile-greeting" data-testid="profile-heading">Hi, I<span className="greeting-apostrophe">’</span>m Vijeesh,</h1>
         <div className="profile-biography">{biography.map((text, index) => <p key={index} data-testid={`profile-bio-${index}`}>{text}</p>)}</div>
         <ResumeDownload testId="profile-resume-download" />
         <section className="profile-tools" aria-labelledby="profile-tools-heading">

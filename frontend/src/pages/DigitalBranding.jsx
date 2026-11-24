@@ -21,7 +21,7 @@ export default function DigitalBranding() {
       initial={reduced ? false : { opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}
       transition={{ duration: .6, ease: revealEase }}>
       <Link to="/portfolio" className="branding-back" aria-label="Back to Work" data-testid="branding-back-top">
-        <ArrowLeft size={24} aria-hidden="true" /> Back
+        <ArrowLeft size={14} aria-hidden="true" /> Back
       </Link>
       <div className="branding-project-label" data-testid="branding-project-label">
         <img src={brandingAssets.icon} alt="" width="37" height="37" data-testid="branding-project-icon" />
@@ -44,7 +44,7 @@ export default function DigitalBranding() {
       </a>
       <div className="branding-nav">
         <Link to="/portfolio" className="branding-back" data-testid="branding-back-bottom">
-          <ArrowLeft size={24} aria-hidden="true" /> Back to Work
+          <ArrowLeft size={14} aria-hidden="true" /> Back to Work
         </Link>
         <ProjectNav current="print" className="branding-back" />
       </div>

@@ -256,3 +256,7 @@ Waited for batch uploads until user said “All uploaded. \"Explore more\" will 
 
 ## 2026-06 — Work tile copy
 - Tile titles/descriptions rewritten from each case study title + At-A-Glance (Oddup subtitle removed). Titles and descriptions clamped to 2 lines (`Portfolio.css`); preview-card titles also clamped.
+
+## 2026-06 — Typography system
+- Font switched site-wide from DM Sans to Inter Tight (400/500/600/700, Google Fonts in `public/index.html`). Gaegu kept only for the Profile greeting (user choice); "I’m" apostrophe spacing tightened via `.greeting-apostrophe`.
+- Shared type scale as CSS variables in `index.css` (`--fs-display, --fs-h1, --fs-h2, --fs-h3, --fs-label, --fs-lead, --fs-body, --fs-small, --fs-caption`, mobile values ≤767px). All page CSS files now use these; heading weights 500 (display/h1) and 600 (h2/h3); letter-spacing normalised (-.025em headings, -.01em text).

@@ -1,6 +1,6 @@
 .vox-page { --vox-blue: #0765ec; --vox-navy: #090538; --vox-line: #dcdfe1; letter-spacing: 0; }
-.vox-page .case-header h1 { font-size: 40px; letter-spacing: 0; line-height: 1.18; }
-.vox-page .case-project-label { font-size: 18px; gap: 11px; }
+.vox-page .case-header h1 { font-size: var(--fs-h1); letter-spacing: -.02em; line-height: 1.18; }
+.vox-page .case-project-label { font-size: var(--fs-label); gap: 11px; }
 .vox-page .case-project-icon { background: #fff; border: 1px solid #ececec; }
 .vox-page .case-text h2, .vox-page .case-text h3 { letter-spacing: 0; }
 .vox-page .case-major { margin-top: 84px; }
@@ -12,13 +12,13 @@
 .vox-note { min-height: 194px; padding: 17px 15px 12px; display: flex; flex-direction: column; justify-content: space-between; gap: 22px; box-shadow: 1px 3px 4px #00000012; border-radius: 2px; }
 .vox-note-peach { background: #fce7dc; }
 .vox-note-blue { background: #e4f2fc; }
-.vox-page .vox-note p { font-size: 13px; line-height: 1.5; margin: 0; }
+.vox-page .vox-note p { font-size: var(--fs-small); line-height: 1.5; margin: 0; }
 .vox-note > span { font-size: 8px; color: #666; }
 .vox-mental-models { display: grid; gap: 20px; margin-top: 28px; }
 .vox-mental-model { background: #f5f5f5; border-radius: 8px; padding: 25px 28px; }
-.vox-mental-model h4, .vox-scope h4 { font-size: 15px; font-weight: 600; margin: 0 0 20px; }
+.vox-mental-model h4, .vox-scope h4 { font-size: var(--fs-h3); font-weight: 600; margin: 0 0 20px; }
 .vox-table-section { margin-top: 34px; }
-.vox-table { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; font-size: 14px; line-height: 1.45; border: 1px solid var(--vox-line); border-radius: 8px; overflow: hidden; }
+.vox-table { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; font-size: var(--fs-small); line-height: 1.45; border: 1px solid var(--vox-line); border-radius: 8px; overflow: hidden; }
 .vox-table th { font-weight: 500; }
 .vox-table th, .vox-table td { padding: 23px 17px; border-bottom: 1px solid var(--vox-line); border-right: 1px solid var(--vox-line); vertical-align: middle; overflow-wrap: break-word; }
 .vox-table tr:last-child > * { border-bottom: 0; }
@@ -37,7 +37,7 @@
 .vox-support-partial svg { color: #efa841; }
 .vox-table-legend { list-style: none; display: flex; flex-wrap: wrap; gap: 15px 26px; max-width: var(--case-text); padding: 0; margin: 24px auto 0; }
 .vox-table-legend li { display: flex; align-items: center; gap: 7px; font-size: 12px; }
-.vox-comparison-summary { margin-top: 24px; font-size: 16px; line-height: 1.6; }
+.vox-comparison-summary { margin-top: 24px; font-size: var(--fs-body); line-height: 1.6; }
 .vox-priority-mark { display: inline-flex; gap: 5px; align-items: center; font-weight: 600; }
 .vox-priority-mark i { width: 16px; height: 16px; border: 4px solid; border-radius: 50%; }
 .vox-p0 i { border-color: #ff6767; }.vox-p1 i { border-color: #ffbf66; }.vox-p2 i { border-color: #f6dab0; }
@@ -49,7 +49,7 @@
 .vox-scope { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .vox-scope-column { background: #f5f5f5; padding: 24px 28px; border-radius: 6px; }
 .vox-scope h4 { margin-bottom: 16px; }
-.vox-scope ul { padding-left: 18px; margin: 0; font-size: 15px; line-height: 1.7; list-style: disc; }
+.vox-scope ul { padding-left: 18px; margin: 0; font-size: var(--fs-body); line-height: 1.7; list-style: disc; }
 .vox-flow-link { font-weight: 500; padding-top: 8px; }
 .vox-flow-link a { display: inline-flex; align-items: center; gap: 3px; color: var(--vox-blue); text-decoration: underline; text-underline-offset: 3px; transition: color .2s; }
 .vox-flow-link a:hover { color: #084595; }
@@ -63,14 +63,14 @@
 .vox-screen { min-width: 0; margin: 0; }
 .vox-screen figcaption { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px; min-height: 48px; }
 .vox-screen-number { background: var(--vox-navy); color: #fff; width: 42px; height: 42px; flex: 0 0 42px; display: grid; place-items: center; border-radius: 50%; font-size: 18px; font-weight: 500; }
-.vox-screen h3 { font-size: 16px; line-height: 1.4; font-weight: 500; margin: 0 0 2px; }
-.vox-screen p { font-size: 13px; line-height: 1.5; margin: 0; color: #616161; }
+.vox-screen h3 { font-size: var(--fs-body); line-height: 1.4; font-weight: 600; margin: 0 0 2px; }
+.vox-screen p { font-size: var(--fs-small); line-height: 1.5; margin: 0; color: #616161; }
 .vox-screen:nth-child(-n+2) figcaption { background: #fff; border-radius: 4px; padding: 8px; }
 .vox-screen > img { width: 100%; height: auto; display: block; border: 1px solid #ededed; border-radius: 8px; }
 @media (max-width: 1100px) { .vox-prototype-grid { width: 86%; column-gap: 40px; } .vox-wireframes { gap: 25px; } .vox-comparison td { font-size: 12px; } .vox-table th, .vox-table td { padding-left: 10px; padding-right: 10px; } }
 @media (max-width: 767px) {
-  .vox-page .case-header h1 { font-size: 32px; }
-  .vox-page .case-text h2, .vox-page .case-text h3 { font-size: 16px; }
+  .vox-page .case-header h1 { font-size: var(--fs-h1); }
+  .vox-page .case-text h2, .vox-page .case-text h3 { font-size: var(--fs-h2); }
   .vox-page .case-major { margin-top: 52px; }
   .vox-page .case-facts { grid-template-columns: 1fr 1fr; padding-bottom: 30px; }
   .vox-notes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -91,14 +91,14 @@
   .vox-priorities tbody tr { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .vox-priorities td { padding: 14px 10px; }
   .vox-table-legend { column-gap: 16px; row-gap: 10px; }
-  .vox-comparison-summary { font-size: 14px; line-height: 1.75; }
+  .vox-comparison-summary { font-size: var(--fs-body); line-height: 1.75; }
   .vox-scope { gap: 16px; }
   .vox-scope-column { padding: 20px; }
-  .vox-scope ul { font-size: 13px; }
+  .vox-scope ul { font-size: var(--fs-body); }
   .vox-wireframes { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px; }
   .vox-prototype-grid { width: 90%; column-gap: 24px; row-gap: 42px; }
   .vox-screen-number { width: 30px; height: 30px; flex-basis: 30px; font-size: 14px; }
-  .vox-screen h3 { font-size: 14px; }.vox-screen p { font-size: 12px; }
+  .vox-screen h3 { font-weight: 600; font-size: var(--fs-body); }.vox-screen p { font-size: var(--fs-body); }
   .vox-screen figcaption { gap: 8px; min-height: 84px; }
 }
 @media (max-width: 519px) {
