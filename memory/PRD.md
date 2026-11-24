@@ -246,3 +246,6 @@ Waited for batch uploads until user said “All uploaded. \"Explore more\" will 
 
 ## 2026-06 — Next Project hover preview
 - `NextProject.jsx` now reads order/images from `content/projects.js` and shows a hover/focus card (Work tile image, category, title) above the link on all 4 case studies. Hidden on touch devices (user choice). Styles in `App.css` (`.next-preview`).
+
+## 2026-06 — Previous Project link
+- `NextProject` takes `direction="prev"`; `ProjectNav` renders "| ← Previous Project | Next Project →" (both with hover preview) in all 4 case-study footers. Order loops: Vox ↔ Poonch ↔ Oddup ↔ Digital & Branding.

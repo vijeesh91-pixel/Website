@@ -8,7 +8,7 @@ import { VoxWireframes, VoxPrototype } from '../components/case-study/VoxScreens
 import { voxImages as images, voxCopy as copy, voxFlowUrl } from '../content/vox';
 import { revealEase } from '../content/site';
 import { ZoomableImage } from '../components/case-study/ImageLightbox';
-import { NextProject } from '../components/case-study/NextProject';
+import { ProjectNav } from '../components/case-study/NextProject';
 import './PoonchCaseStudy.css';
 import './VoxCaseStudy.css';
 
@@ -50,6 +50,6 @@ export default function VoxCaseStudy() {
     <VoxWireframes />
     <CaseStudyText id="vox-prototype" title="Prototype Screens" paragraphs={copy.prototype} major />
     <VoxPrototype />
-    <footer className="case-footer case-column case-nav"><Link to="/portfolio" className="case-back" data-testid="vox-back-bottom"><ArrowLeft size={14} aria-hidden="true" /> Back to Work</Link><span aria-hidden="true">|</span><NextProject current="vox" /></footer>
+    <footer className="case-footer case-column case-nav"><Link to="/portfolio" className="case-back" data-testid="vox-back-bottom"><ArrowLeft size={14} aria-hidden="true" /> Back to Work</Link><ProjectNav current="vox" /></footer>
   </main>;
 }

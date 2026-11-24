@@ -6,7 +6,7 @@ import { CaseStudyImage, CaseStudyText } from '../components/case-study/CaseStud
 import { poonchImages as images, poonchBranding, poonchCopy as copy } from '../content/poonch';
 import { revealEase } from '../content/site';
 import { ZoomableImage } from '../components/case-study/ImageLightbox';
-import { NextProject } from '../components/case-study/NextProject';
+import { ProjectNav } from '../components/case-study/NextProject';
 import './PoonchCaseStudy.css';
 
 export default function PoonchCaseStudy() {
@@ -45,6 +45,6 @@ export default function PoonchCaseStudy() {
       {poonchBranding.map(image => <ZoomableImage key={image.id} image={image} testId={`case-branding-${image.id}`} />)}
     </div>
     <CaseStudyText id="outcome" title="Final Outcome" paragraphs={copy.outcome} major />
-    <footer className="case-footer case-column case-nav"><Link to="/portfolio" className="case-back" data-testid="poonch-back-bottom"><ArrowLeft size={14} aria-hidden="true" /> Back to Work</Link><span aria-hidden="true">|</span><NextProject current="poonch" /></footer>
+    <footer className="case-footer case-column case-nav"><Link to="/portfolio" className="case-back" data-testid="poonch-back-bottom"><ArrowLeft size={14} aria-hidden="true" /> Back to Work</Link><ProjectNav current="poonch" /></footer>
   </main>;
 }

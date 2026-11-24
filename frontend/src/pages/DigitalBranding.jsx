@@ -7,7 +7,7 @@ import { brandingAssets, brandingCopy, logoGallery, brandGalleries, printGallery
 import { socialLinks } from '../content/profile';
 import { revealEase } from '../content/site';
 import { ZoomableImage } from '../components/case-study/ImageLightbox';
-import { NextProject } from '../components/case-study/NextProject';
+import { ProjectNav } from '../components/case-study/NextProject';
 import './DigitalBranding.css';
 
 export default function DigitalBranding() {
@@ -46,8 +46,7 @@ export default function DigitalBranding() {
         <Link to="/portfolio" className="branding-back" data-testid="branding-back-bottom">
           <ArrowLeft size={24} aria-hidden="true" /> Back to Work
         </Link>
-        <span aria-hidden="true">|</span>
-        <NextProject current="print" className="branding-back" />
+        <ProjectNav current="print" className="branding-back" />
       </div>
     </footer>
   </main>;

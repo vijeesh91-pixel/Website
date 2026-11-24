@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
-import { NextProject } from '../components/case-study/NextProject';
+import { ProjectNav } from '../components/case-study/NextProject';
 import { motion, useReducedMotion } from 'framer-motion';
 import { oddupMedia as m, oddupCopy as copy, oddupFacts, oddupFoundations, oddupIcon } from '../content/oddup';
 import { revealEase } from '../content/site';
@@ -103,8 +103,7 @@ export default function OddupCaseStudy() {
     </Grid>
     <footer className="case-footer case-column oddup-footer">
       <Link to="/portfolio" className="case-back" data-testid="oddup-back-bottom"><ArrowLeft size={14} aria-hidden="true" /> Back</Link>
-      <span aria-hidden="true">|</span>
-      <NextProject current="oddup" />
+      <ProjectNav current="oddup" />
     </footer>
   </main>;
 }
