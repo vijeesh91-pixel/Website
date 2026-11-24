@@ -20,7 +20,6 @@ export const NextProject = ({ current, className = 'case-back', direction = 'nex
 };
 
 export const ProjectNav = ({ current, className }) => <>
-  <span aria-hidden="true">|</span>
   <NextProject current={current} className={className} direction="prev" />
   <span aria-hidden="true">|</span>
   <NextProject current={current} className={className} />

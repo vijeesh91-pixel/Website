@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
+import { FloatingNav } from '../components/case-study/FloatingNav';
 import { ProjectNav } from '../components/case-study/NextProject';
 import { motion, useReducedMotion } from 'framer-motion';
 import { oddupMedia as m, oddupCopy as copy, oddupFacts, oddupFoundations, oddupIcon } from '../content/oddup';
@@ -102,8 +103,8 @@ export default function OddupCaseStudy() {
       <div className="oddup-col"><Media image={m.metricWeeks} id="metric-weeks" /><Media image={m.metricChanges} id="metric-changes" /></div>
     </Grid>
     <footer className="case-footer case-column oddup-footer">
-      <Link to="/portfolio" className="case-back" data-testid="oddup-back-bottom"><ArrowLeft size={14} aria-hidden="true" /> Back</Link>
       <ProjectNav current="oddup" />
     </footer>
+    <FloatingNav />
   </main>;
 }

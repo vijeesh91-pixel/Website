@@ -260,3 +260,8 @@ Waited for batch uploads until user said “All uploaded. \"Explore more\" will 
 ## 2026-06 — Typography system
 - Font switched site-wide from DM Sans to Inter Tight (400/500/600/700, Google Fonts in `public/index.html`). Gaegu kept only for the Profile greeting (user choice); "I’m" apostrophe spacing tightened via `.greeting-apostrophe`.
 - Shared type scale as CSS variables in `index.css` (`--fs-display, --fs-h1, --fs-h2, --fs-h3, --fs-label, --fs-lead, --fs-body, --fs-small, --fs-caption`, mobile values ≤767px). All page CSS files now use these; heading weights 500 (display/h1) and 600 (h2/h3); letter-spacing normalised (-.025em headings, -.01em text).
+
+## 2026-06 — Resume + floating shortcuts
+- Resume replaced site-wide: `site.resumeUrl` → `89ff400cae29bacb_Vijeesh_ThattanteValappil.pdf`; download filename `Vijeesh_ThattanteValappil.pdf`.
+- Bottom "Back to Work" links removed from all 4 case studies (footer now: Previous | Next Project).
+- `components/case-study/FloatingNav.jsx`: two round floating buttons (bottom-right; Back to Work grid icon + scroll-to-top arrow), light frosted bg, black thin icons, shown only after 25% scroll progress.

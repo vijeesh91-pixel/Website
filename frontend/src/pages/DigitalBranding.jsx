@@ -7,6 +7,7 @@ import { brandingAssets, brandingCopy, logoGallery, brandGalleries, printGallery
 import { socialLinks } from '../content/profile';
 import { revealEase } from '../content/site';
 import { ZoomableImage } from '../components/case-study/ImageLightbox';
+import { FloatingNav } from '../components/case-study/FloatingNav';
 import { ProjectNav } from '../components/case-study/NextProject';
 import './DigitalBranding.css';
 
@@ -43,11 +44,9 @@ export default function DigitalBranding() {
         Explore more <ArrowUpRight size={20} aria-hidden="true" />
       </a>
       <div className="branding-nav">
-        <Link to="/portfolio" className="branding-back" data-testid="branding-back-bottom">
-          <ArrowLeft size={14} aria-hidden="true" /> Back to Work
-        </Link>
         <ProjectNav current="print" className="branding-back" />
       </div>
     </footer>
+    <FloatingNav />
   </main>;
 }
