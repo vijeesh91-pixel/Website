@@ -11,8 +11,8 @@ export const FloatingNav = () => {
   return <AnimatePresence>
     {visible && <motion.nav className="floating-nav" aria-label="Page shortcuts" data-testid="floating-nav"
       initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 12 }} transition={{ duration: .25, ease: 'easeOut' }}>
-      <Link to="/portfolio" className="floating-btn" aria-label="Back to Work" title="Back to Work" data-testid="floating-back-to-work"><LayoutGrid size={18} strokeWidth={1.6} /></Link>
-      <button type="button" className="floating-btn" onClick={toTop} aria-label="Scroll to top" title="Scroll to top" data-testid="floating-scroll-top"><ArrowUp size={18} strokeWidth={1.6} /></button>
+      <Link to="/portfolio" className="floating-btn" aria-label="Back to Work" title="Back to Work" data-testid="floating-back-to-work"><LayoutGrid size={22} strokeWidth={1.7} /></Link>
+      <button type="button" className="floating-btn" onClick={toTop} aria-label="Scroll to top" title="Scroll to top" data-testid="floating-scroll-top"><ArrowUp size={22} strokeWidth={1.7} /></button>
     </motion.nav>}
   </AnimatePresence>;
 };
