@@ -227,3 +227,9 @@ Waited for batch uploads until user said “All uploaded. \"Explore more\" will 
 - Final footer underline/weight aligned to PDF; subsequent `yarn build` passed and external route returned HTTP 200.
 - No credentials created or modified. No known blocking issue. Exact visual acceptance remains pending user review; no pixel-diff or user approval claimed.
 - Next: user review; real Oddup content when supplied. P2 optional, unapproved enhancement: jump links for long gallery sections.
+## 2026-06 — Oddup Case Study
+- Replaced the temporary `/portfolio/oddup` page with a real case study built from `ODDUPCS.pdf` (`pages/OddupCaseStudy.jsx`, `pages/OddupCaseStudy.css`, `content/oddup.js`).
+- 27 WebP images + 2 MP4 videos placed in PDF order; Img2 and video19 are full-bleed; video13 sits beside img12/img14 (Corner Radius).
+- Videos are muted, loop, and play only while visible (IntersectionObserver).
+- Footer: Back | Next Project: Vox Case Study.
+- Verified with a smoke screenshot (no horizontal overflow, both videos playing).

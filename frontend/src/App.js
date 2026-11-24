@@ -10,7 +10,7 @@ import ProfilePage from './pages/ProfilePage';
 import ContactPage from './pages/ContactPage';
 import PoonchCaseStudy from './pages/PoonchCaseStudy';
 import VoxCaseStudy from './pages/VoxCaseStudy';
-import ComingSoonCaseStudy from './pages/ComingSoonCaseStudy';
+import OddupCaseStudy from './pages/OddupCaseStudy';
 import DigitalBranding from './pages/DigitalBranding';
 import './App.css';
 
@@ -40,7 +40,7 @@ function SiteRoutes() {
       <Route path="/portfolio/contact" element={<ContactPage />} />
       <Route path="/portfolio/poonch" element={<PoonchCaseStudy />} />
       <Route path="/portfolio/vox" element={<VoxCaseStudy />} />
-      <Route path="/portfolio/oddup" element={<ComingSoonCaseStudy project="Oddup" />} />
+      <Route path="/portfolio/oddup" element={<OddupCaseStudy />} />
       <Route path="/portfolio/print" element={<DigitalBranding />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
