@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Volume2, VolumeX } from 'lucide-react';
 import { projects } from '../../content/projects';
+import { trackEvent } from '../../lib/analytics';
 
 export const ProjectCarousel = ({ carousel }) => (
   <section className="project-carousel" aria-label="Selected work" aria-roledescription="carousel" data-testid="project-carousel">
@@ -28,7 +29,21 @@ export const ProjectCarousel = ({ carousel }) => (
           return (
           <article key={project.id} className={`project-tile ${project.wide ? 'project-tile-wide' : ''}`} role="group" aria-roledescription="slide"
             aria-label={`${index + 1} of ${projects.length}: ${project.title}`} data-testid={`project-tile-${project.id}`}>
-            <TileContent {...(project.path ? { to: project.path, className: 'project-case-link', draggable: false, 'aria-label': `Read the ${project.title} case study`, 'data-testid': `project-link-${project.id}` } : {})}>
+            <TileContent
+  {...(project.path ? {
+    to: project.path,
+    className: 'project-case-link',
+    draggable: false,
+    'aria-label': `Read the ${project.title} case study`,
+    'data-testid': `project-link-${project.id}`,
+    onClick: () => trackEvent('project_click', {
+      project_name: project.title,
+      project_category: project.category,
+      project_id: project.id,
+      button_location: 'project_carousel',
+    }),
+  } : {})}
+>
             <motion.div className="project-image-frame" whileHover={{ y: -3 }} transition={{ duration: .35 }}>
               <img src={project.image} alt={project.alt} width={project.wide ? '1307' : '1178'} height="587" draggable="false" loading={index < 2 ? 'eager' : 'lazy'} decoding="async" data-testid={`project-image-${project.id}`} />
             </motion.div>
