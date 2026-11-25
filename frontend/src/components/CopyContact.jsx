@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Check, Copy } from 'lucide-react';
+import { trackEvent } from '../lib/analytics';
 
 export const CopyContact = ({ value, label, id }) => {
   const [status, setStatus] = useState('');
@@ -8,7 +9,12 @@ export const CopyContact = ({ value, label, id }) => {
   const copy = async () => {
     try {
       await navigator.clipboard.writeText(value);
-      setStatus('Copied!');
+setStatus('Copied!');
+
+trackEvent('contact_copy', {
+  contact_method: id,
+  button_location: 'contact_page',
+});
     } catch { setStatus('Select the text to copy.'); }
     window.clearTimeout(timer.current);
     timer.current = window.setTimeout(() => setStatus(''), 3000);
