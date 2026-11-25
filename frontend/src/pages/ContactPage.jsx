@@ -8,6 +8,7 @@ import { profileAssets, socialLinks } from '../content/profile';
 import { site, revealEase } from '../content/site';
 import './Portfolio.css';
 import './PersonalPages.css';
+import { trackEvent } from '../lib/analytics';
 
 export default function ContactPage() {
   const heading = useRef(null);
@@ -20,15 +21,55 @@ export default function ContactPage() {
         <h1 ref={heading} tabIndex={-1} data-testid="contact-heading">Let’s Design Together!</h1>
         <p className="contact-introduction" data-testid="contact-introduction">Whether you have a project in mind, an opportunity to discuss, or simply want to connect, my inbox is always open.</p>
         <div className="contact-methods">
-          <div className="contact-method"><a href={`mailto:${site.email}`} data-testid="contact-email">{site.email}</a><CopyContact value={site.email} label="email address" id="email" /></div>
+          <div className="contact-method">
+  <a
+    href={`mailto:${site.email}`}
+    data-testid="contact-email"
+    onClick={() => trackEvent('contact_click', {
+      contact_method: 'email',
+      button_location: 'contact_page',
+    })}
+  >
+    {site.email}
+  </a>
+  <CopyContact value={site.email} label="email address" id="email" />
+</div>
           <span className="contact-divider" aria-hidden="true">•</span>
-          <div className="contact-method"><a href={`tel:${site.phone}`} data-testid="contact-phone">{site.phone}</a><CopyContact value={site.phone} label="phone number" id="phone" /></div>
+          <div className="contact-method">
+  <a
+    href={`tel:${site.phone}`}
+    data-testid="contact-phone"
+    onClick={() => trackEvent('contact_click', {
+      contact_method: 'phone',
+      button_location: 'contact_page',
+    })}
+  >
+    {site.phone}
+  </a>
+  <CopyContact value={site.phone} label="phone number" id="phone" />
+</div>
         </div>
         <section className="contact-socials" aria-labelledby="explore-more-heading">
           <h2 id="explore-more-heading" data-testid="explore-more-heading">Explore more</h2>
-          <div className="social-links">{socialLinks.map(link => <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" data-testid={`social-${link.label.toLowerCase()}`}>
-            {link.label}<ArrowUpRight size={20} aria-hidden="true" /><span className="sr-only"> (opens in a new tab)</span>
-          </a>)}</div>
+          <div className="social-links">
+  {socialLinks.map(link => (
+    <a
+      key={link.label}
+      href={link.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-testid={`social-${link.label.toLowerCase()}`}
+      onClick={() => trackEvent('social_click', {
+        social_platform: link.label.toLowerCase(),
+        button_location: 'contact_page',
+      })}
+    >
+      {link.label}
+      <ArrowUpRight size={20} aria-hidden="true" />
+      <span className="sr-only"> (opens in a new tab)</span>
+    </a>
+  ))}
+</div>
         </section>
         <section className="contact-download" aria-labelledby="download-heading"><h2 id="download-heading" data-testid="download-heading">Download</h2><ResumeDownload testId="contact-resume-download">Resume</ResumeDownload></section>
       </div>
