@@ -14,6 +14,7 @@ import OddupCaseStudy from './pages/OddupCaseStudy';
 import DigitalBranding from './pages/DigitalBranding';
 import { ReadingProgress } from './components/ReadingProgress';
 import './App.css';
+import { trackEvent } from './lib/analytics';
 
 function SiteRoutes() {
   const { pathname } = useLocation();
@@ -30,6 +31,23 @@ function SiteRoutes() {
     const lenis = new Lenis({ autoRaf: true, duration: 1.15, smoothWheel: true });
     return () => lenis.destroy();
   }, [reducedMotion]);
+
+  useEffect(() => {
+  const caseStudies = {
+    '/portfolio/poonch': 'poonch',
+    '/portfolio/vox': 'vox',
+    '/portfolio/oddup': 'oddup',
+    '/portfolio/print': 'digital_branding',
+  };
+
+  const caseStudy = caseStudies[pathname];
+
+  if (caseStudy) {
+    trackEvent('case_study_view', {
+      case_study_name: caseStudy,
+    });
+  }
+}, [pathname]);
 
   return (<>
     {pathname !== '/' && <ReadingProgress key={pathname} />}
