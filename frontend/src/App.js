@@ -40,11 +40,77 @@ function SiteRoutes() {
 }, [pathname]);
   
   useEffect(() => {
-    window.scrollTo(0, 0);
-    const sectionTitle = { '/portfolio': 'Work', '/portfolio/writing': 'Writing', '/portfolio/patent': 'Patent', '/portfolio/profile': 'Profile', '/portfolio/contact': 'Contact', '/portfolio/poonch': 'Poonch Case Study', '/portfolio/vox': 'Vox Booking Experience', '/portfolio/oddup': 'Oddup Case Study', '/portfolio/print': 'Digital & Branding' }[pathname];
-    document.title = sectionTitle ? `${sectionTitle} — Vijeesh Thattante Valappil` : 'Vijeesh Thattante Valappil — Product Designer';
-  }, [pathname]);
+  window.scrollTo(0, 0);
 
+  const pageMetadata = {
+    '/': {
+      title: 'Vijeesh Thattante Valappil — Product Designer',
+      description:
+        'Product designer specializing in fintech, design systems, and AI-assisted workflows. Explore selected work and digital product experiences.',
+    },
+    '/portfolio': {
+      title: 'Work — Vijeesh Thattante Valappil',
+      description:
+        'Explore product design projects spanning fintech, digital experiences, design systems, branding, and UX case studies.',
+    },
+    '/portfolio/writing': {
+      title: 'Writing — Vijeesh Thattante Valappil',
+      description:
+        'Explore articles, publications, and insights on product design, UX, technology, and digital experiences.',
+    },
+    '/portfolio/patent': {
+      title: 'Patent — Vijeesh Thattante Valappil',
+      description:
+        'Explore patent and innovation work involving technology, ideas, and product development.',
+    },
+    '/portfolio/profile': {
+      title: 'Profile — Vijeesh Thattante Valappil',
+      description:
+        'Learn about Vijeesh Thattante Valappil, a product designer focused on fintech, UX, design systems, and digital products.',
+    },
+    '/portfolio/contact': {
+      title: 'Contact — Vijeesh Thattante Valappil',
+      description:
+        'Contact Vijeesh Thattante Valappil for product design, UX/UI, design systems, and digital product opportunities.',
+    },
+    '/portfolio/poonch': {
+      title: 'Poonch Case Study — Vijeesh Thattante Valappil',
+      description:
+        'Explore the Poonch design case study and the approach to solving its user experience and product design challenges.',
+    },
+    '/portfolio/vox': {
+      title: 'Vox Booking Experience — Vijeesh Thattante Valappil',
+      description:
+        'Explore the VOX Cinemas booking experience case study, focusing on cinema ticket booking and user experience.',
+    },
+    '/portfolio/oddup': {
+      title: 'Oddup Case Study — Vijeesh Thattante Valappil',
+      description:
+        'Explore the Oddup product design case study, including fintech experiences, complex interfaces, and product design.',
+    },
+    '/portfolio/print': {
+      title: 'Digital & Branding — Vijeesh Thattante Valappil',
+      description:
+        'Explore digital branding, visual identity, and branding projects by product designer Vijeesh Thattante Valappil.',
+    },
+  };
+
+  const metadata = pageMetadata[pathname] || pageMetadata['/'];
+
+  document.title = metadata.title;
+
+  let descriptionMeta = document.querySelector(
+    'meta[name="description"]'
+  );
+
+  if (!descriptionMeta) {
+    descriptionMeta = document.createElement('meta');
+    descriptionMeta.setAttribute('name', 'description');
+    document.head.appendChild(descriptionMeta);
+  }
+
+  descriptionMeta.setAttribute('content', metadata.description);
+}, [pathname]);
   useEffect(() => {
     if (reducedMotion) return;
     const lenis = new Lenis({ autoRaf: true, duration: 1.15, smoothWheel: true });
