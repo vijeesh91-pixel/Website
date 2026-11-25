@@ -1,3 +1,4 @@
+import { trackEvent } from '../lib/analytics';
 import { useState } from 'react';
 import { ArrowDown, LoaderCircle } from 'lucide-react';
 import { Button } from './ui/button';
@@ -9,8 +10,13 @@ export const ResumeDownload = ({ testId, className = 'personal-resume', children
   const download = async event => {
     if (failed) return; // The retry link opens the original PDF if browser downloads are restricted.
     event.preventDefault();
-    if (busy) return;
-    setBusy(true);
+if (busy) return;
+
+trackEvent('resume_download', {
+  file_name: 'Vijeesh_ThattanteValappil.pdf',
+});
+
+setBusy(true);
     try {
       const response = await fetch(site.resumeUrl);
       if (!response.ok) throw new Error('Download unavailable');
