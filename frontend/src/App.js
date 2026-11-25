@@ -21,6 +21,25 @@ function SiteRoutes() {
   const reducedMotion = useReducedMotion();
 
   useEffect(() => {
+  const normalizedPath = pathname === '/'
+    ? '/'
+    : pathname.replace(/\/+$/, '');
+
+  const canonicalUrl =
+    `https://www.vijeeshthattantevalappil.site${normalizedPath}`;
+
+  let canonical = document.querySelector('link[rel="canonical"]');
+
+  if (!canonical) {
+    canonical = document.createElement('link');
+    canonical.setAttribute('rel', 'canonical');
+    document.head.appendChild(canonical);
+  }
+
+  canonical.setAttribute('href', canonicalUrl);
+}, [pathname]);
+  
+  useEffect(() => {
     window.scrollTo(0, 0);
     const sectionTitle = { '/portfolio': 'Work', '/portfolio/writing': 'Writing', '/portfolio/patent': 'Patent', '/portfolio/profile': 'Profile', '/portfolio/contact': 'Contact', '/portfolio/poonch': 'Poonch Case Study', '/portfolio/vox': 'Vox Booking Experience', '/portfolio/oddup': 'Oddup Case Study', '/portfolio/print': 'Digital & Branding' }[pathname];
     document.title = sectionTitle ? `${sectionTitle} — Vijeesh Thattante Valappil` : 'Vijeesh Thattante Valappil — Product Designer';
